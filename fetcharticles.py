@@ -16,7 +16,7 @@ def safe_fn(fn):
     return fn.replace('/', '%2F')
 
 def fetch(name):
-    url = 'http://en.m.wikipedia.org/wiki/' + urllib2.quote(name, safe='')
+    url = 'http://en.m.wikipedia.org/wiki/' + urllib2.quote(name.encode('utf8'), safe='')
     print 'fetching', url
     req = urllib2.Request(url, headers={'User-Agent':user_agent})
     res = urllib2.urlopen(req)
@@ -27,15 +27,15 @@ def main(articles_fn, out_dir):
     for i,name in enumerate(articles):
         name = name.strip().decode('utf8')
         fn = os.path.join(out_dir, safe_fn(name))
-        print i, len(articles), name, fn
+#        print i, len(articles), name, fn
 
         if os.path.exists(fn):
-            print 'already there', fn
+ #           print 'already there', fn
             continue
         try:
             html = fetch(name)
         except (urllib2.HTTPError,KeyError, urllib2.URLError) , e:
-            print e
+            print repr(name), name, e
             continue
         open(fn, 'w').write(html)
         time.sleep(fetch_delay)
