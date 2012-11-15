@@ -2,6 +2,7 @@
 """
 based on: https://github.com/gwik/geventhttpclient
 """
+import sys, os, hashlib
 import gevent.pool
 from geventhttpclient import HTTPClient
 from geventhttpclient.url import URL
@@ -17,12 +18,16 @@ def get_client(url):
         http_clients[server]  = HTTPClient.from_url(server, concurrency=10)
     return http_clients[server]
 
-def fetch(http, url, fn):
+def fetch(http, url, fn, pool, num):
     # the greenlet will block until a connection is available
     #request.add_header('User-Agent',user_agent)
     response = http.get(url)
-    assert response.status_code == 200
-    print dir(response), fn
+    if response.status_code == 200:
+        open(fn,'w').write(response.read())
+        print 'wrote', num
+#        print 'pool', pool.size, len(pool), pool.free_count()
+    else:
+        print 'err', response.status_code, url
 
 def url2fn(url):
     ext = url.split('.')[-1]
@@ -37,16 +42,16 @@ def main():
     # connection pool.
     pool = gevent.pool.Pool(20)
 
-    for url in open(urls_fn)[:200]:
+    for i,url in enumerate(open(urls_fn)):  
+	#if i> 400: break
         url = url.strip()
         fn = os.path.join(images_dir, url2fn(url))
         if not os.path.exists(fn):
             http = get_client(url)
-            print url, http
-            pool.spawn(fetch, http, url, fn)
+            pool.spawn(fetch, http, url, fn, pool, i)
 
     pool.join()
-    for http in http_clients:
+    for http in http_clients.values():
         http.close()
 
 if __name__ == '__main__':
