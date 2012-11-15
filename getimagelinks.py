@@ -20,8 +20,10 @@ def parse_article(fn):
     tree   = etree.parse(open(fn), parser)
     e = tree.getroot()
     for i in e.xpath('.//img'):
-        print 'http:%s' % i.get('src')
-
+        try:
+            print 'http:%s' % i.get('src')
+        except UnicodeEncodeError:
+            sys.stderr.write('UnicodeError %s %r \n' %(fn, i.get('src')))
 
 def main(articles_dir):
     for name in os.listdir(articles_dir):
