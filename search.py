@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 '''
+pip install whoosh
 '''
 import sys, os
 import urllib2

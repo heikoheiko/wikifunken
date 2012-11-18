@@ -1,22 +1,6 @@
 #!/usr/bin/env python
 '''
 
->>> from whoosh.fields import *
->>> schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT)
->>> ix = create_in("indexdir", schema)
->>> writer = ix.writer()
->>> writer.add_document(title=u"First document", path=u"/a",
-...                     content=u"This is the first document we've added!")
->>> writer.add_document(title=u"Second document", path=u"/b",
-...                     content=u"The second one is even more interesting!")
->>> writer.commit()
->>> from whoosh.qparser import QueryParser
->>> with ix.searcher() as searcher:
-...     query = QueryParser("content", ix.schema).parse("first")
-...     results = searcher.search(query)
-...     results[0]
-...
-{"title": u"First document", "path": u"/a"}
 '''
 import sys, os
 import urllib2
@@ -42,7 +26,7 @@ def get_text(fn):
     Main Content:
     e.xpath('.//div[@class="show "]//text()')
     '''
-    text = u''.join(e.xpath('.//div[@class="show "]//text()'))
+    text = u''.join(e.xpath('.//div[@class="show "]//text()')) # OPTIMIZE ME
     return text
 
 
@@ -64,7 +48,7 @@ def main(articles_fn, articles_dir, index_dir):
 #        print text[:400]
         writer.add_document(title=name, path=fn, content=text)
 
-    writer.commit()
+    writer.commit(optimize=True) # optimize did not result in any size improvements
     print '%d docs in index' % ix.doc_count()
 
 
