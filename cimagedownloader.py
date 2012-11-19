@@ -14,9 +14,10 @@ def main():
     bot = fetcher.Fetcher(report_cb=report_cb)
     for i,url in enumerate(open(urls_fn)):
         url = url.strip()
-        fn = os.path.join(images_dir, layout.url2fn(url))
+        fn = os.path.join(images_dir, layout.ext_img_url2fn(url))
         if not os.path.exists(fn):
             bot.add(url, fn)
+    #print bot.jobs
     bot.run()
 
 if __name__ == '__main__':

@@ -30,7 +30,7 @@ class Fetcher(object):
             self.http_clients[server]  = HTTPClient.from_url(server, concurrency=self.concurrency)
         return self.http_clients[server]
 
-    def fetch(self, url, fn, num):
+    def fetch(self, url, fn):
         # the greenlet will block until a connection is available
         #request.add_header('User-Agent',self.user_agent)
         http = self.get_client(url)
