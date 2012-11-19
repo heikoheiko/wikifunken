@@ -38,9 +38,9 @@ def search():
         hits = [dict(title=r['title'], path=r['path']) for r in results]
 
     # do we have a perfect match?
-    if hits and hits[0]['title'].lower() == query_string.lower():
-        return flask.redirect('wiki/' + hits[0]['title'])
-
+    for hit in hits[:100]:
+        if hit['title'].lower() == query_string.lower():
+            return flask.redirect('wiki/' + hit['title'])
     return flask.render_template('search.html', query = query_string, results = hits)
 
 
