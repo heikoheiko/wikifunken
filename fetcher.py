@@ -3,7 +3,7 @@
 based on: https://github.com/gwik/geventhttpclient
 """
 import gevent.pool
-from geventhttpclient import HTTPClient, Header
+from geventhttpclient.client import HTTPClient, Header
 
 HTTPClient.DEFAULT_HEADERS = {
     Header('User-Agent'): 'Wikipedia Version 1.0 Bot'
