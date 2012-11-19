@@ -2,6 +2,7 @@
 import sys, os
 import layout
 import fetcher
+import urllib2
 
 def report_cb(status, url, fn, num, total):
     print status, fn, num, total
