@@ -100,15 +100,13 @@ def rewrite_external_urls(troot, article_names):
 def replace_image_src(troot):
     # KISS
     for i in troot.xpath('.//img'):
-        # collect all images
-        #print i, i.items(), [(e, e.get('class')) for e in i.xpath('ancestor-or-self::*[@class]')][-1]
-        #print i.get('src')
         src = i.get('src')
-#        print
-#        print src
-        src = layout.ext_img_url2local_url(src)
-#        print src
-        i.set('src', src)
+        try:
+            src = layout.ext_img_url2local_url(src)
+            i.set('src', src)
+        except UnicodeEncodeError:
+            print "UnicodeERR", repr(src)
+
 
 
 def rewrite_styles(troot):
@@ -182,13 +180,12 @@ def parse_article(fn, article_names):
 def main(articles_dir, out_dir):
     articles = [x.strip() for x in os.listdir(articles_dir)]
     for name in articles:
-#    for name in ['Munich']:
         fn = os.path.join(articles_dir, layout.safe_fn(name.strip()))
-        print fn
-        tree = parse_article(fn, articles)
         ofn = os.path.join(out_dir, layout.safe_fn(name.strip()))
-        open(ofn,'w').write('<!DOCTYPE html>\n' + etree.tostring(tree))
-        #open(ofn,'w').write(open(fn).read())
+        if not os.path.exists(ofn):
+            print fn
+            tree = parse_article(fn, articles)
+            open(ofn,'w').write('<!DOCTYPE html>\n' + etree.tostring(tree))
     return tree
 
 if __name__=='__main__':
