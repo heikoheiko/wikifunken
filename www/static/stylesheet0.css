@@ -1,0 +1,1947 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.mw-mf-image-replacement {
+  font-style: italic;
+  color: #706E6E;
+  text-decoration: underline;
+  border: dotted 1px #CCC;
+  padding: 10px;
+  display: inline-block;
+}
+input {
+  word-break: normal;
+}
+button.disabled {
+  opacity: 0.2;
+}
+a.external {
+  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/external-link-ltr-icon.png?2012-10-30T23:26:40Z) center right no-repeat;
+  padding-right: 13px;
+}
+#mw-mf-edit-page-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.divclearable {
+  display: block;
+  zoom: 1;
+  vertical-align: middle;
+  position: relative;
+}
+table.toc h2 {
+  border: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+table.gallery th,
+table.gallery td {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+}
+table.gallery {
+  background: #f9f9f9;
+  border-bottom: 0;
+}
+table.gallery .gallerytext {
+  margin-top: -12px;
+  text-align: center;
+}
+table td,
+table th {
+  padding: 3px;
+}
+table th {
+  word-break: normal;
+}
+.mwm-message.mwm-notice {
+  background: #FFFFFF;
+  font-size: 1.1em;
+  color: #000000;
+}
+.mwm-message.mwm-notice a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000000;
+}
+.mwm-notice {
+  padding: 5px;
+  background: #dddddd;
+  -webkit-border-radius: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border: 1px solid gray;
+}
+table {
+  /* following 5 rules are needed for scrolling */
+
+  overflow: auto;
+  /* for browsers that don't support overflow-y */
+
+  overflow-y: hidden;
+  overflow-x: auto;
+  word-break: normal;
+  display: block;
+}
+tbody {
+  display: inline-block;
+}
+table table {
+  border: 0;
+  margin-bottom: 0;
+}
+table table td,
+table table th {
+  border: 0;
+  padding: 0;
+}
+table.toc {
+  background: #f9f9f9;
+}
+table.wikitable th {
+  background: #f3f3f3;
+}
+table.admin {
+  width: 300px;
+}
+p,
+li,
+dl,
+#mainpage,
+#featured_article {
+  line-height: 1.65;
+}
+pre {
+  white-space: pre-wrap;
+}
+a {
+  text-decoration: none;
+  color: #002bb8;
+}
+a:visited {
+  color: #5a3696;
+}
+a:active {
+  color: #faa700;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.new,
+a.new:visited,
+a.new:hover {
+  color: red;
+}
+a.back_to_top,
+a.back_to_top:visited {
+  margin-top: 7px;
+  color: blue;
+}
+#contentSub {
+  margin-bottom: 10px;
+}
+#featured_article .noprint,
+.today .noprint {
+  display: none;
+}
+img.thumbborder {
+  border: 1px solid #cccccc;
+}
+/* @noflip */div.floatright,
+table.floatright {
+  float: right;
+}
+/* @noflip */div.floatleft,
+table.floatright {
+  float: left;
+}
+#content_wrapper.home h1 {
+  display: none;
+}
+#mw-mf-header {
+  margin: 0;
+  position: relative;
+  border-bottom: solid 1px #CCC;
+}
+#disableButtons {
+  text-align: center;
+}
+#disableButtons button {
+  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/buttonbg.gif?2012-10-30T23:26:40Z) no-repeat center;
+  border: 0;
+  height: 23px;
+  width: 83px;
+}
+#disableButtons #backButton {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+.mwm-message.mwm-notice {
+  font-size: 1.1em;
+}
+#image_wrapper {
+  margin: 8px 0 8px -3px;
+}
+/* TODO: move into MediaWiki:Common.css ? */
+.mobile div.searchresult {
+  width: 100%;
+}
+@media all and (max-width: 500px) {
+  .mobile div.tleft,
+  .mobile div.floatleft,
+  .mobile table.floatleft,
+  .mobile div.tright,
+  .mobile div.floatright,
+  .mobile table.floatright {
+    float: none;
+    clear: none;
+    margin: auto;
+    width: auto !important;
+  }
+}
+/* Plainlinks - this can be used to switch
+ * off special external link styling */
+.plainlinks a {
+  background: none !important;
+  padding: 0 !important;
+}
+b {
+  font-weight: bold;
+}
+ul {
+  list-style: square inside;
+}
+ol {
+  list-style: decimal inside;
+}
+i {
+  font-style: italic;
+}
+.jsonly {
+  display: none;
+}
+.jsEnabled .jsonly {
+  display: block;
+}
+
+/* FOOTER
+initially moved from beta_common.css in
+Change-Id: I48bcdc43e72f2a9b60e6d1bfe877d79ad80b6d5d
+*/
+#footer {
+  padding: 12px 23px 12px 23px;
+  border-top: solid 1px #aaa;
+  line-height: 24px;
+  position: relative;
+  clear: both;
+  /* cancel any floating in the content */
+
+}
+#footer h2 {
+  height: 24px;
+  display: block;
+  margin: 0;
+  font-size: 1em;
+}
+#footer div {
+  font-size: 0.9em;
+  clear: both;
+}
+#footer .license {
+  float: left;
+  margin-right: 4px;
+}
+#footer img.license {
+  margin-top: 3px;
+  /* (22px line height - 16px height) / 2) */
+
+  height: 16px;
+}
+#footer .links {
+  text-align: center;
+}
+#footer .links li {
+  display: inline-block;
+  width: 25%;
+  font-size: 0.9em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.4;
+}
+#footer ul {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+#footer ul.settings .left,
+#footer ul.settings .right {
+  width: 48%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#footer ul.settings .left {
+  text-align: right;
+  padding-right: 2px;
+}
+#footer ul.settings .right {
+  text-align: left;
+  padding-left: 2px;
+}
+#footer .notice .terms {
+  float: left;
+}
+#footer .license {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 22px;
+}
+html[dir="rtl"] #footer .settings li:first-child .left:before,
+html[dir="ltr"] #footer .settings li:first-child .left:after {
+  content: " | ";
+  visibility: visible;
+}
+html[dir="rtl"] #footer .settings .left:before,
+html[dir="ltr"] #footer .settings .left:after {
+  content: " | ";
+  visibility: hidden;
+}
+body.beta #footer .links li {
+  width: 33%;
+}
+body #section_footer button {
+  height: 22px;
+}
+@media all and (min-width: 330px) {
+  #footer .content_block {
+    font-size: 0.9em;
+  }
+  #footer .links li {
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width: 500px) {
+  #footer .links li {
+    font-size: 1.2em;
+  }
+}
+
+html {
+  font-size: 90%;
+  /* default browser size is 16px (12pt - our @baseFontSize) */
+
+}
+/* = 16pt */
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.3333333333333333em;
+  color: #252525;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", serif;
+  margin-top: 14pt;
+  margin-bottom: 9pt;
+}
+h1 button,
+h2 button,
+h3 button,
+h4 button,
+h5 button,
+h6 button {
+  height: 22pt;
+}
+p {
+  margin-bottom: 8pt;
+}
+h1 {
+  font-size: 1.833em;
+  line-height: 22pt;
+  color: black;
+}
+h2 {
+  font-size: 1.5em;
+  /* 18pt */
+
+  line-height: 22pt;
+}
+h3 {
+  font-size: 1.1666666666666665em;
+  /* 14pt */
+
+  line-height: 22pt;
+  font-weight: bold;
+  margin-bottom: 8pt;
+}
+h4 {
+  font-weight: bold;
+}
+sup {
+  vertical-align: super;
+}
+sub {
+  vertical-align: sub;
+}
+sub,
+sup {
+  font-size: 0.75em;
+}
+#content_wrapper {
+  position: relative;
+  margin: 0 23px 0 23px;
+}
+#content_wrapper .section h3:first-child {
+  margin-top: 0;
+}
+#content_wrapper .section:last-child {
+  border-bottom: none;
+}
+#content_wrapper .thumb {
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #f9f9f9;
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+input.search {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+}
+#footer {
+  margin-top: 14pt;
+}
+@media all and (max-width: 280px) {
+  body {
+    font-size: 0.8em;
+  }
+  #footer {
+    padding: 12px 10px;
+  }
+  #content_wrapper {
+    margin: 0 12px;
+  }
+}
+blockquote {
+  quotes: "\201C" "\201D";
+  padding-left: 10px;
+  padding-bottom: 30px;
+  padding-right: 0;
+  margin-top: 20px;
+  margin-right: 0;
+  position: relative;
+  width: 90%;
+}
+blockquote:before {
+  content: open-quote;
+  font-size: 3em;
+  font-weight: bold;
+}
+blockquote:after {
+  font-size: 3em;
+  content: close-quote;
+  font-weight: bold;
+  float: right;
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+}
+
+/* reuses https://github.com/wikimedia/agora */
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1em 1.5em 1em;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border: 1px #33589f solid;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #3366bb;
+  background-image: -moz-linear-gradient(top, #3670c8, #3366bb);
+  background-image: -ms-linear-gradient(top, #3670c8, #3366bb);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3670c8), color-stop(100%, #3366bb));
+  background-image: -webkit-linear-gradient(top, #3670c8, #3366bb);
+  background-image: linear-gradient(#3670c8, #3366bb);
+}
+button:hover,
+input[type=submit]:hover {
+  background-color: #3f77d7;
+  background-image: -moz-linear-gradient(top, #4c84da, #3f77d7);
+  background-image: -ms-linear-gradient(top, #4c84da, #3f77d7);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c84da), color-stop(100%, #3f77d7));
+  background-image: -webkit-linear-gradient(top, #4c84da, #3f77d7);
+  background-image: linear-gradient(#4c84da, #3f77d7);
+}
+button:active,
+input[type=submit]:active {
+  background-color: #2a549c;
+  background-image: -moz-linear-gradient(top, #2d5ea9, #2a549c);
+  background-image: -ms-linear-gradient(top, #2d5ea9, #2a549c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d5ea9), color-stop(100%, #2a549c));
+  background-image: -webkit-linear-gradient(top, #2d5ea9, #2a549c);
+  background-image: linear-gradient(#2d5ea9, #2a549c);
+}
+button:disabled,
+input[type=submit]:disabled,
+button:disabled.hover,
+input[type=submit]:disabled.hover,
+button.disabled,
+input[type=submit].disabled,
+button.disabled:hover,
+input[type=submit].disabled:hover {
+  color: white;
+  text-shadow: none;
+  background-color: #7297d7;
+  background-image: -moz-linear-gradient(top, #7297d7, #7297d7);
+  background-image: -ms-linear-gradient(top, #7297d7, #7297d7);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7297d7), color-stop(100%, #7297d7));
+  background-image: -webkit-linear-gradient(top, #7297d7, #7297d7);
+  background-image: linear-gradient(#7297d7, #7297d7);
+  border-color: #5e89d1;
+}
+button.languageSelector,
+input[type=submit].languageSelector {
+  margin-top: 14pt;
+}
+#mw-mf-header form,
+#mw-mf-sq {
+  height: 46px;
+}
+#mw-mf-main-menu-button {
+  display: inline-block;
+  height: 46px;
+  width: 40px;
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/main.png?2012-10-30T23:26:40Z);
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: 24px 30px;
+  -o-background-size: 24px 30px;
+  -webkit-background-size: 24px 30px;
+  background-size: 24px 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  z-index: 2;
+  left: 0;
+  border-radius: 5px 5px 5px;
+  background-position: center center;
+}
+.jsEnabled #mw-mf-main-menu-button {
+  background-image: url(data:image/png;base64,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); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/main.png?2012-10-30T23:26:40Z)!ie;
+}
+#mw-mf-main-menu-button:active {
+  background-color: #f9f9f9;
+}
+#mw-mf-viewport {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  /* for non-existant file pages */
+
+}
+#mw-mf-page-center {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+  min-height: 100%;
+}
+.overlay .header,
+#mw-mf-overlay .header,
+#mw-mf-header {
+  z-index: 2;
+  color: black;
+  background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #fafafa, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #fafafa, #f3f3f3);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #f3f3f3));
+  background-image: -webkit-linear-gradient(top, #fafafa, #f3f3f3);
+  background-image: linear-gradient(#fafafa, #f3f3f3);
+  border-bottom: 1px solid #e2e2e2;
+}
+#mw-mf-page-left {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  bottom: 0;
+  top: 0;
+  margin-right: 0;
+  position: absolute;
+  border-right: solid 1px #AAA;
+  display: none;
+}
+.navigationEnabled #mw-mf-page-left {
+  width: 80%;
+  right: 20%;
+}
+.navigationEnabled #mw-mf-page-center {
+  left: 80%;
+  overflow-x: hidden;
+}
+.navigationEnabled.navigationFullScreen #mw-mf-page-left {
+  width: 100%;
+  right: 0;
+}
+.navigationEnabled.navigationFullScreen #mw-mf-page-center {
+  left: 100%;
+}
+.navigationEnabled #mw-mf-page-left {
+  display: block;
+}
+#mw-mf-menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+#mw-mf-universal-language {
+  font-size: 0.8em;
+  margin-left: 14px;
+  /* margin-left of #mw-mf-menu-main li a + 4px on left of icon background-position */
+
+}
+#mw-mf-page-left,
+#mw-mf-menu-main,
+#mw-mf-menu-main li {
+  background-color: #4E4E4E;
+}
+#mw-mf-menu-main li {
+  text-shadow: 0 1px 0 black;
+  border-bottom: 1px inset #717171;
+  font-weight: normal;
+}
+#mw-mf-menu-main li a {
+  color: white;
+  display: block;
+  padding: 12px;
+  padding-left: 32px;
+  line-height: 22px;
+  background-repeat: no-repeat;
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: 24px 24px;
+  -o-background-size: 24px 24px;
+  -webkit-background-size: 24px 24px;
+  background-size: 24px 24px;
+  background-position: 0px 10px;
+  margin-left: 10px;
+  border-bottom: 1px inset #3e3e3e;
+}
+#mw-mf-menu-main li a:hover {
+  text-decoration: none;
+}
+#mw-mf-content-left {
+  height: 100%;
+  border-left: solid 12px #252525;
+  border-right: solid 1px black;
+}
+#mw-mf-menu-main li.icon a {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/home.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-menu-main li.icon2 a {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/random.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-menu-main li.icon3 a {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/nearby.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-menu-main li.icon4 a {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/contact.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-menu-main li.icon5 a {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/settings.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-menu-main li.icon6 a.logout {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/logout.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-menu-main li.icon6 a.login {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/login.png?2012-10-30T23:26:40Z);
+}
+.jsEnabled #mw-mf-menu-main li.icon a {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzUlEQVRYw+2WUQ2DMBRFK6ESkIAEJCABCZOABCQgoRIqoRImoQ7OPpZtDDoK9LFsyTv83xvODS8Yoyjv0GLPjO+BSH1OuMXxoJOPrwlMGaXNR+YEsTUYSBNpJMx71riUmr+SYzysii5hPkWgkjQvsUbWfNkam8yncJvWoOM4IXtGGCkj0q6ZD0jQfzIfkWK5RpH53BrYYvPpNe5HnUrIfIrBGIPDPx+Zqleeny/RSOSvfQVfLwjT1916QPYUNIt/Ci3QAi3Qgv8vUJTf5AbOO3vjMryqbgAAAABJRU5ErkJggg==); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/home.png?2012-10-30T23:26:40Z)!ie;
+}
+.jsEnabled #mw-mf-menu-main li.icon2 a {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVRYw+WXUbmEIBCFiWAEIxiBCEYgAhGIQAQiEMEIRjCCDc590LsryCwzyD7c757H/RYOnJn5VaX+ijB8a+MRBgE70P3EmOGx4a2519YaDivu8k83nmARQWt9lvKGuoaWlFfwZSQpL5Ar1MOwiNjRqo0Og5vyZTNYzLeiT2UDLz7r/lvQbK0tGxixgbvc/qpIZd9soFR6M6oKq9BgIW+veVWw52K6oyJGDIV/uLLBXO5nWHF4C9WoxWtmv/NUBkYyuYa4GU9lbMMlQzSc518bDDwF43SQPJxwtmvYZjAoQkN/fCYcGssGtYWxWC8+tqstObFLH9qAwTcggbF1iojEduhU5I7YPqbGwWc9GDnAELEHQxpwL2xfS29bsC1AG7Qc2xwZokVIYGQdDaMUpg/R7YdFAks2tl9J5iV8gu1rqbZH1Ql1bO+CISzMBwfb9mUrfaFciGm+YTtAwwq2X+GJGXgMjICZ9YUgfM/bEWGJZ5hqw/Y7ZUdguWoQqinP6okIYGwIMF0+uDNsHylPqqdO9ixwlZZrNtDMlvsH+gFbAHEqRZJyRwAAAABJRU5ErkJggg==); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/random.png?2012-10-30T23:26:40Z)!ie;
+}
+.jsEnabled #mw-mf-menu-main li.icon3 a {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeklEQVRYw81XW5HEIBBEQiQgAQlIiIRIQAISVgISkBAJkYAEHPR95OpuM5ksM4RUbX/D9LwfxggBC4+IiIgAj8mMAxwSCig2hAE0cFhxjYp4iwQRbRS4PuETMqRYeghWaKClQIIWXiN+ZgQkzHtA4RCwMQGf5N6v5HOGZZSgr169uZMuFaF2WBlBkYj/pShqG4j/S+O117zev7x06UfS2enyv6otbtfDITeyKOfeEdsfdM+pSo8QbDqCqiZQuug9yKto0imDfKzjZn9BUNYynM7kQy0Xfauon3Ui9sraHanl7dpNpFGIm5097Q/sRyykYa9GitM0rnRFgWUmtnxsnkzfSRIiPBZEZp5JA9w58vVjn7Xh43b0bWuL0ga9/kob5j4CKxS/ml6Qmh6x0zVXMGbju3cfhIb4evsIYav2H2HEjXONbcyNdh1qN4ZgYk5AzTbdeS+UsadsHpj9oorIZjQObqpD3cO4aTZP4M9NyTwFzMOzhyk6b74LP2asuzKjV1vvAAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/nearby.png?2012-10-30T23:26:40Z)!ie;
+}
+.jsEnabled #mw-mf-menu-main li.icon4 a {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeUlEQVRYCe3BYXnCMBiF0SshEiohEiKhEiKhEiKhEiKhEiKhEiLhc/COwrPBWCkpK/84Rx8f/0KndyAQGSmA6Sg4AomJmSvD63/wRBIFY02vV+AIDGRmtg3aA09PolBpk9WCwMBIYa+ix+gIJCYq7SrG1YzTPQKRkYKx18TIzJXR6RaZmdfMDHgmbhlev1HYzxjxOBL3ou7h2Wci6oSIcW/QGjJtKgOdTggU/spah8PYZmS8zujIrJn1GInHChGnMxwJY82M0xYqf1USnX4QqawzvLbR81sm6AaBwmNez1H4ZnjdoCOzJaoFHd+ifuBIGFuS2uC5mPSDSGVbVisKi4rTGYHCM7NaMXARdIIj81zFqQ0dxiLphITxnOHViolFkeiptAlqRc/C6Cm0imqFw1hU2o1qR2avrD0oGHvMOL0GTyAQSGQeMZyOQGGN4XUMAmt6HYfMvagj0WHcyjoaiatJx8NRuZhxegd6FobTu1AwvN4HT9THx7YvS4MHJ8AwYSAAAAAASUVORK5CYII=); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/contact.png?2012-10-30T23:26:40Z)!ie;
+}
+.jsEnabled #mw-mf-menu-main li.icon5 a {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABbklEQVRYw+2YW5XEIAyGkYCESqgEJCABCZWAhEpAwkhAQiWMBBz8+7DtdrmFUHrmzF7C2xz+fAxJk7RC/BGDgY/X3QCLxN4dgKkXkCpo9w4Bcw8gV9DuAZwCaDg8UwA2rMepUwXH/S6AKbj+bh5zrOC7v2Y0Ytg9jcCKeyxUMgozwi0AV7+iOxCODvIowvWkaZr3FgoKCoZIBtUsEbVsT/bJSkq0qmxRZit7VfE66UetILFkxPqiANX7l7FkiifH7WnNIkzUKt8GPBjFcRkBGE5rGgEoVv8I1wGSBfDXAawmWA0zA6BZgIEYrAz3ug2YYPf1aD40nOJ4eDOclFtEq7xnVZcWbD1NHDLb3zoSDL+JQxb7guxPulDKJkyF03PSIgv00XJ0dPPuakejJ6MNHp7s2v+D148bvDwDGO9hDF4nwgkBCUt1XehUwSm/nwIX/ZI3leUMZa5oI9a+l8Bc8evfk18PmPbR/Wu9zWeUD81pSK7tdzcOAAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/settings.png?2012-10-30T23:26:40Z)!ie;
+}
+.jsEnabled #mw-mf-menu-main li.icon6 a.logout {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXxJREFUeNq0V+1RxCAQxYz/Lx2IHdDBYQfpwJSQElJCSsAOYgfYAXbAdRAr4JaTOBH5WjjfzMuPDZk3C/vYDTHGkAqOwBW4md+QwAnYx77FClGgMnlsTrhJkAYyymH1s8UISlMHVSPIC7Zvz2QAam/NghUUCUEeWN8Htp/Zdx0pA43E34EyEN+Asxeb7KNUMAaFePd6D0GKfMdLBXUkPiREx1CwVFBG4ifgCmSHWA8UwHPog4dbqebRuyxPiTWfrljOiTUvGONPpg0bxhYWC/DSUGDL7YnIcG7ITu83UanY0LiVDHO1sUSXyHUP4XeLx4LqFJHqvDg72DXc86N2Vvrr34ZLm9VMC7U2GCtHE5I6t9S5kFp2kXOTlR0ij8pRQtxrSxeEv6ZWwZS5ZzdKbKHBqEaQZUysnIGpG/1oq2DpcMtbKtRy74ehpvjl+tuTF39OTABZdD+N8VvAn7Ls1fVxiL21iPm2OP43iED1qtRPCnZL/WlLk3/CVYABAIOVKIlKN1B9AAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/logout.png?2012-10-30T23:26:40Z)!ie;
+}
+.jsEnabled #mw-mf-menu-main li.icon6 a.login {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXxJREFUeNq0V+1RxCAQxYz/Lx2IHdDBYQfpwJSQElJCSsAOYgfYAXbAdRAr4JaTOBH5WjjfzMuPDZk3C/vYDTHGkAqOwBW4md+QwAnYx77FClGgMnlsTrhJkAYyymH1s8UISlMHVSPIC7Zvz2QAam/NghUUCUEeWN8Htp/Zdx0pA43E34EyEN+Asxeb7KNUMAaFePd6D0GKfMdLBXUkPiREx1CwVFBG4ifgCmSHWA8UwHPog4dbqebRuyxPiTWfrljOiTUvGONPpg0bxhYWC/DSUGDL7YnIcG7ITu83UanY0LiVDHO1sUSXyHUP4XeLx4LqFJHqvDg72DXc86N2Vvrr34ZLm9VMC7U2GCtHE5I6t9S5kFp2kXOTlR0ij8pRQtxrSxeEv6ZWwZS5ZzdKbKHBqEaQZUysnIGpG/1oq2DpcMtbKtRy74ehpvjl+tuTF39OTABZdD+N8VvAn7Ls1fVxiL21iPm2OP43iED1qtRPCnZL/WlLk3/CVYABAIOVKIlKN1B9AAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/login.png?2012-10-30T23:26:40Z)!ie;
+}
+#mw-mf-menu-main li.disabled {
+  opacity: 0.2;
+}
+#mw-mf-menu-main li:hover {
+  background-color: #5C5C5C;
+  border-left: solid 12px #3366BB;
+  margin-left: -12px;
+}
+#mw-mf-clearsearch {
+  top: 12px;
+}
+body.navigationEnabled {
+  height: 100%;
+  overflow: hidden;
+}
+.clearlink {
+  right: 8px;
+}
+#mw-mf-overlay {
+  display: none;
+}
+#mw-mf-overlay li {
+  text-align: left;
+}
+#mw-mf-overlay .mw-mf-overlay-footer a {
+  display: inline;
+}
+a.escapeOverlay,
+button.escapeOverlay {
+  display: none;
+}
+html.overlay #mw-mf-viewport {
+  display: none;
+}
+html.overlay a.escapeOverlay,
+html.overlay button.escapeOverlay {
+  display: block;
+}
+html.overlay #footer {
+  display: none !important;
+}
+html.overlay ul.content li {
+  color: #666;
+  border: none;
+  position: relative;
+  border-bottom: solid 1px #999999;
+  border-bottom: solid 1px #eee;
+  padding: 12px 40px;
+  font-size: 0.9em;
+}
+html.overlay ul.content li a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
+html.overlay ul.content li a:active,
+html.overlay ul.content li a:hover,
+html.overlay ul.content li a:visited {
+  text-decoration: none;
+  color: #666;
+}
+html.overlay ul.content li:hover {
+  background-color: #ACD1E9;
+}
+.overlay #mw-mf-overlay {
+  display: block;
+}
+#mw-mf-overlay div.content {
+  margin: 14pt 23px 0 23px;
+}
+#mw-mf-overlay .alert {
+  padding: 8px;
+  padding-left: 88px;
+  margin: 0 40px 0 40px;
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  margin-bottom: 8px;
+  min-height: 64px;
+}
+#mw-mf-overlay .alert.info {
+  padding-left: 106px;
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/W.png?2012-10-30T23:26:40Z);
+  padding-top: 24.5px;
+  padding-bottom: 8px;
+  font-size: 1.2em;
+  background-position: left center;
+  /* no border */
+
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: 98px 98px;
+  -o-background-size: 98px 98px;
+  -webkit-background-size: 98px 98px;
+  background-size: 98px 98px;
+}
+#mw-mf-overlay .alert.tip {
+  border: solid 2px #000000;
+}
+#mw-mf-overlay .alert.tip.tip-watchlist {
+  /* TODO: swap out for better images */
+
+  background-image: url(../modules/images/watchlist.png);
+  background-position: -78px center;
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: auto 64px;
+  -o-background-size: auto 64px;
+  -webkit-background-size: auto 64px;
+  background-size: auto 64px;
+}
+#mw-mf-overlay .alert.success {
+  border: solid 2px #008000;
+  background-image: url(images/success.png);
+}
+#mw-mf-overlay .alert.error {
+  border: solid 2px #ff0000;
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/fail.png?2012-10-30T23:26:40Z);
+}
+#mw-mf-overlay .alert h2 {
+  margin: 0 0 8px 0;
+}
+.overlay .header {
+  line-height: 46px;
+  text-align: center;
+  border-bottom: solid 1px #CCC;
+  padding: 0;
+  padding-left: 40px;
+  color: #666;
+  height: 46px;
+  margin: 0;
+  padding-bottom: 0;
+}
+.overlay .header input.search {
+  margin-top: 0;
+  margin-right: 20px;
+}
+#mw-mf-overlay .header.mw-mf-locked {
+  padding-left: 22px;
+}
+.overlay .header h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 46px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.overlay ul {
+  text-align: left;
+  left: 0;
+  width: 100% !important;
+  border: none;
+  z-index: 1;
+  position: relative;
+  opacity: 1;
+  padding: 0;
+  padding-bottom: 20px;
+  cursor: pointer;
+  margin: 0;
+  list-style: none;
+}
+a.escapeOverlay,
+button.escapeOverlay {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  height: 46px;
+  width: 40px;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  background: none;
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/arrow-left-2.png?2012-10-30T23:26:40Z);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -999px;
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: auto 30px;
+  -o-background-size: auto 30px;
+  -webkit-background-size: auto 30px;
+  background-size: auto 30px;
+  z-index: 2;
+}
+html.navigationEnabled body,
+html.navigationEnabled #mw-mf-viewport,
+html.navigationEnabled #mw-mf-page-center {
+  overflow: hidden;
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+#mw-mf-page-left,
+#mw-mf-page-center {
+  min-height: 100%;
+}
+#mw-mf-overlay li.mw-mf-overlay-footer,
+#mw-mf-overlay li.mw-mf-overlay-header {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.8em;
+}
+#mw-mf-overlay li.mw-mf-overlay-footer a {
+  color: #002BB8;
+}
+#mw-mf-overlay li.mw-mf-overlay-header {
+  background-color: #F1F1F1;
+}
+.supportsPositionFixed #mw-mf-page-center {
+  min-height: none !important;
+}
+@media all and (max-width: 240px) {
+  #mw-mf-search {
+    padding-left: 0;
+  }
+  #mw-mf-menu-main li {
+    background-position: 0 0;
+    font-size: 0.8em;
+  }
+}
+@media all and (min-width: 700px) {
+  .navigationEnabled .beta #mw-mf-page-left {
+    width: 20%;
+    display: block;
+    right: 80%;
+  }
+  .navigationEnabled .beta #mw-mf-page-center {
+    left: 20%;
+    right: 0;
+    width: 80%;
+    overflow: auto;
+  }
+  .navigationFullScreen .beta #mw-mf-page-left {
+    width: 100%;
+    right: 0%;
+  }
+  .navigationFullScreen .beta #mw-mf-page-center {
+    display: none;
+  }
+  .beta.full-screen-search #mw-mf-page-left {
+    display: block !important;
+  }
+}
+.supportsPositionFixed.navigationEnabled #mw-mf-viewport {
+  overflow-y: auto;
+}
+/* Page actions */
+.hasSecondaryNav .full-screen-search #mw-mf-menu-page {
+  display: none;
+}
+.hasSecondaryNav #mw-mf-menu-page {
+  width: 30px;
+  position: absolute;
+  right: 19px;
+  top: 8px;
+  bottom: 0;
+}
+.hasSecondaryNav #mw-mf-menu-page a {
+  height: 30px;
+  width: 30px;
+}
+/* Notifications */
+#mf-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #E4E4E4;
+  box-shadow: 0 -20px 10px -16px #aaaaaa;
+  word-break: break-word;
+  line-height: 1.4em;
+  font-size: 0.8em;
+  z-index: 3;
+}
+#mf-notification div {
+  position: relative;
+  padding: 22px 38px 22px 22px;
+  /* 38px is 22px padding + close button icon 16px */
+
+}
+#mf-notification .mw-cite-backlink {
+  display: none;
+}
+#mf-notification button {
+  top: 22px;
+  right: 22px;
+  /* padding of #content_wrapper */
+
+  width: 16px;
+  height: 12px;
+  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/../common/images/close-button-beta.png?2012-10-30T23:26:40Z) no-repeat scroll 0 0 transparent;
+  margin: 0;
+  background-position: right center;
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: auto 12px;
+  -o-background-size: auto 12px;
+  -webkit-background-size: auto 12px;
+  background-size: auto 12px;
+  cursor: pointer;
+  position: absolute;
+  text-indent: -999px;
+  overflow: hidden;
+  border: none;
+}
+#mf-notification h3 {
+  margin: 0;
+  padding-right: 4px;
+  line-height: 1em;
+  display: inline;
+}
+#mf-notification a:visited,
+#mf-notification a {
+  color: #3354C0;
+}
+
+/* escapeOverlay */
+/* Search and navigation menu
+moved from beta_common.css in
+Change-Id: Id7715a83f8dc42cbdb23d8cbf982801606236f7c
+*/
+html.page-loading input.searchSubmit,
+html.jsSearch input.searchSubmit {
+  display: none;
+}
+input.searchSubmit {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 9px;
+}
+input.search {
+  -webkit-appearance: none;
+  line-height: normal;
+  background: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 0;
+  width: 99%;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 9px;
+  height: 30px;
+  vertical-align: middle;
+  /* don't use line height here as placeholder on ripple positions incorrectly */
+
+  background-color: white;
+  /* remove fennec default background */
+
+  padding-left: 2px;
+  /* visual indication that search is happening */
+
+}
+input.search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+input.search:focus {
+  outline: none;
+}
+input.search.searching {
+  background-color: #eee;
+}
+.hasSecondaryNav .full-screen-search #mw-mf-searchForm,
+#mw-mf-searchForm {
+  padding: 0 20px 0 40px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.hasSecondaryNav .full-screen-search #mw-mf-searchForm .clearlink,
+#mw-mf-searchForm .clearlink {
+  top: 9px;
+  right: 8px;
+  width: 24px;
+  height: 30px;
+  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/../common/images/close-button-beta.png?2012-10-30T23:26:40Z) no-repeat scroll 0 0 transparent;
+  margin: 0;
+  display: none;
+  background-position: right center;
+  /* use -webkit prefix for older android browsers eg. nexus 1 */
+
+  -moz-background-size: auto 12px;
+  -o-background-size: auto 12px;
+  -webkit-background-size: auto 12px;
+  background-size: auto 12px;
+  cursor: pointer;
+  position: absolute;
+}
+body.beta #mw-mf-searchForm {
+  padding-right: 50px;
+}
+/* FIXED display:block below */
+#results {
+  display: block;
+  width: 100%;
+}
+.full-screen-search #mw-mf-header {
+  z-index: 2;
+  color: white;
+  background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #fafafa, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #fafafa, #f3f3f3);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #f3f3f3));
+  background-image: -webkit-linear-gradient(top, #fafafa, #f3f3f3);
+  background-image: linear-gradient(#fafafa, #f3f3f3);
+}
+.full-screen-search #results,
+.full-screen-search #mw-mf-searchForm.notEmpty .clearlink,
+.full-screen-search button.escapeOverlay {
+  display: block;
+}
+.full-screen-search #mw-mf-page-left,
+.full-screen-search #mw-mf-main-menu-button,
+.full-screen-search #footer,
+.full-screen-search #zero-rated-banner-red,
+.full-screen-search #zero-rated-banner,
+.full-screen-search #mw-mf-logo,
+.full-screen-search #content_wrapper,
+.full-screen-search .goButton {
+  display: none !important;
+}
+.full-screen-search #mw-mf-sq {
+  margin-right: 0;
+}
+.full-screen-search #results {
+  left: 0;
+  width: 100% !important;
+  max-height: 99999px;
+  border: none;
+  z-index: 1;
+  background-color: #E6E6E6;
+  position: relative;
+  opacity: 1;
+}
+.full-screen-search ul.suggestions-results {
+  padding: 0;
+  position: relative;
+  padding-bottom: 20px;
+  cursor: pointer;
+  margin: 0;
+  background-color: white;
+  list-style: none;
+}
+.full-screen-search ul.suggestions-results li.suggestions-result {
+  color: #666;
+  border: none;
+  position: relative;
+  border-bottom: solid 1px #999999;
+  border-bottom: solid 1px #eee;
+  padding: 12px 40px;
+  font-size: 0.9em;
+}
+.full-screen-search ul.suggestions-results li.suggestions-result a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
+.full-screen-search ul.suggestions-results li.suggestions-result a:active,
+.full-screen-search ul.suggestions-results li.suggestions-result a:hover,
+.full-screen-search ul.suggestions-results li.suggestions-result a:visited {
+  text-decoration: none;
+  color: #666;
+}
+.full-screen-search ul.suggestions-results li.suggestions-result:hover {
+  background-color: #ACD1E9;
+}
+/* samsung galaxy s gt-19000 */
+@media all and (max-width: 240px) {
+  #mw-mf-search {
+    font-size: 0.8em;
+  }
+}
+
+/* CONTACT FORM
+moved from beta_common.css in
+Change-Id: I57557fd2e359264853efadc1e5da1c9cbe6a0d97
+*/
+#feedback table textarea { /* old contact us form */
+	width: 100%;
+}
+#mf-feedback-form input[type=submit] {
+	background-color: #5E5E5E;
+	color: white;
+	display: block;
+	margin: 22px 0;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-o-box-shadow: 3px 3px 3px #8C8C8C;
+	-moz-box-shadow: 3px 3px 3px #8C8C8C;
+	-webkit-box-shadow: 3px 3px 3px #8C8C8C;
+	box-shadow: 3px 3px 3px #8C8C8C;
+	font-size: 1.5em;
+}
+
+#mf-feedback-form input[type=submit] {
+	padding: 12px;
+	cursor: pointer;
+}
+
+#mf-feedback-form textarea,
+#mw-input-wpsubject {
+	padding: 12px 16px;
+	width: 100%;
+	border: solid 1px #B2B2B2;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	border-radius: 2px;
+}
+
+#mf-feedback-form textarea,
+#mw-input-wpsubject {
+	font-size: 1.5em;
+}
+
+#mf-feedback-form table,
+#mf-feedback-form td {
+	border: none;
+}
+
+#mf-feedback-form .error {
+	color: #9F0F0F;
+	display: inline-block;
+	padding-left: 18px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/* ZERO-RATED BANNERS
+moved from beta_common.css in
+Change-Id: Ia25126d950ee87cbc76f2e91d679cdd27405ee51
+*/
+.mw-mf-banner {
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  background: #F4A83D;
+  display: block;
+  border-bottom: 1px solid #D6800C;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  color: #735005;
+  font-family: Tahoma, sans-serif;
+}
+.mw-mf-banner .mw-mf-message,
+.mw-mf-banner button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.android.mw-mf-banner {
+  display: none;
+}
+html.android .android.mw-mf-banner {
+  display: block;
+}
+.mw-mf-banner a {
+  text-decoration: underline;
+  color: #735005;
+}
+.mw-mf-banner button.notify-close {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background-color: #FAD163;
+  margin-right: 0;
+  border: 2px solid #735005;
+}
+.mw-mf-banner p {
+  line-height: normal;
+}
+.mw-mf-banner .mw-mf-message {
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+.mw-mf-banner.mw-mf-banner-undismissable {
+  color: #ffffff;
+  background-color: red;
+}
+.mw-mf-banner.mw-mf-banner-undismissable a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/*
+SETTINGS PAGE
+based on http://acidmartin.wordpress.com/2011/06/18/css3-iphone-toggle-buttons/
+*/
+/* variables */
+/* mixins */
+/* styling */
+.page-loading #content_wrapper form.mw-mf-settings ul li .mw-mf-checkbox-css3,
+.page-loading #content_wrapper form.mw-mf-settings ul li #mw-mf-settings-save {
+  /* hide when still loading to avoid screen flash */
+
+  display: none;
+}
+form.mw-mf-settings ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 40px;
+}
+form.mw-mf-settings ul li {
+  min-height: 4em;
+  line-height: 2em;
+  vertical-align: middle;
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  position: relative;
+}
+form.mw-mf-settings ul li div.mw-mf-checkbox-css3 {
+  display: inline;
+}
+form.mw-mf-settings ul li #mw-mf-settings-save,
+form.mw-mf-settings ul li .mw-mf-checkbox-css3 {
+  cursor: pointer;
+  position: relative;
+  line-height: 2em;
+  padding: 0 0 0 8px;
+  text-align: right;
+}
+form.mw-mf-settings ul li #mw-mf-settings-save {
+  min-width: 50%;
+  text-align: center;
+  display: block;
+}
+form.mw-mf-settings ul li #mw-mf-settings-save:hover {
+  text-decoration: none;
+  background-color: #57a7f2;
+  background: #57a7f2;
+}
+form.mw-mf-settings ul li span.mw-mf-settings-on,
+form.mw-mf-settings ul li span.mw-mf-settings-off {
+  display: none;
+}
+form.mw-mf-settings ul li input[type=submit],
+form.mw-mf-settings ul li .mw-mf-checkbox-css3 span {
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 15px;
+  color: white;
+  background: #818181;
+  background: -moz-linear-gradient(top, #aeaeae, #818181);
+  background: -webkit-linear-gradient(top, #aeaeae, #818181);
+  background: linear-gradient(top, #aeaeae, #818181);
+  position: relative;
+  border: solid 1px #818181;
+}
+form.mw-mf-settings ul li input[type=submit] {
+  min-width: 76px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: lowercase;
+}
+form.mw-mf-settings ul li.mw-mf-settings-description {
+  font-size: 0.8em;
+  line-height: 1.8em;
+  font-weight: normal;
+  padding-right: 8px;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 {
+  border: none;
+  min-width: 76px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: lowercase;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 input {
+  min-width: 76px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: lowercase;
+  display: none;
+  z-index: 6;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 span {
+  min-width: 76px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: lowercase;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 span::before {
+  /* small 'sliding' switch for checkboxes */
+
+  content: "";
+  width: 30%;
+  border: solid 1px white;
+  border-top: none;
+  border-bottom: solid 1px #aaa;
+  background: #ebebeb;
+  background: -moz-linear-gradient(top, #eeeeee, #ebebeb);
+  background: -webkit-linear-gradient(top, #eeeeee, #ebebeb);
+  background: linear-gradient(top, #eeeeee, #ebebeb);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 .mw-mf-settings-on {
+  display: none;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 .mw-mf-settings-on::before {
+  right: 0;
+  left: auto;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 .mw-mf-settings-off {
+  padding-right: 8px;
+  padding-left: 8px;
+  display: inline-block;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3 .mw-mf-settings-off::before {
+  left: 0;
+  right: auto;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3.checked {
+  border: none;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3.checked .mw-mf-settings-on {
+  display: inline-block;
+  text-align: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+  background-color: #57a7f2;
+  background: #57a7f2;
+}
+.mw-mf-checkboxes form.mw-mf-settings ul li .mw-mf-checkbox-css3.checked .mw-mf-settings-off {
+  display: none;
+}
+
+.specialPage.overlay body {
+  background-color: #ffffff;
+}
+.specialPage.overlay #mw-mf-overlay .header {
+  background-color: #393939;
+}
+.specialPage.overlay #mw-mf-overlay .header h1 {
+  padding-left: 0.4em;
+}
+#userloginForm {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+table.user-login {
+  border: none;
+  display: table;
+}
+table.user-login tbody {
+  display: table-row-group;
+}
+table.user-login tr {
+  display: table-row;
+}
+table.user-login tr td {
+  border: none;
+}
+table.user-login .mw-label {
+  display: none;
+}
+table.user-login td,
+table.user-login tr,
+table.user-login input {
+  width: 100%;
+}
+table.user-login input.loginPassword,
+table.user-login input.loginText {
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 100%;
+  padding: 1em 3em 1em 0.4em;
+}
+
+/* Styling of sections and toggling
+moved from beta_common.css in
+Change-Id: I683d029d09340a460b02016c5c4fbd6ada5a9b35
+*/
+.section_heading button {
+  display: none;
+  /* for non-js browsers */
+
+  overflow: hidden;
+  width: 27px;
+  border: none;
+  text-indent: -999px;
+  float: right;
+  cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.page-loading .section {
+  opacity: 0.2;
+}
+.page-loading.togglingEnabled .section {
+  opacity: 1;
+}
+.page-loading.togglingEnabled .section_heading button {
+  display: none;
+}
+.togglingEnabled .section_heading#section_0 button {
+  background-position: right bottom;
+}
+.togglingEnabled .section_heading button {
+  display: inline-block;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-background-size: auto 9px;
+  background-size: auto 9px;
+}
+.togglingEnabled .section_heading.openSection button {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/hide.png?2012-10-30T23:26:40Z);
+}
+.togglingEnabled .section_heading button {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/show.png?2012-10-30T23:26:40Z);
+}
+.openSection button {
+  opacity: 1;
+}
+.beta .section_anchors,
+.togglingEnabled .section_anchors {
+  display: none;
+}
+.content_block {
+  width: 100%;
+}
+.togglingEnabled .content_block {
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* fix for Bug 36196 */
+
+}
+.togglingEnabled #footer .content_block,
+.togglingEnabled .content_block:last-child {
+  border-bottom: none;
+}
+.togglingEnabled .openSection.section_anchors {
+  display: block;
+  margin-bottom: 5px;
+}
+.togglingEnabled .openSection.content_block {
+  -webkit-tap-highlight-color: normal;
+  /* fix for Bug 36196 */
+
+}
+.togglingEnabled .openSection.content_block.loading,
+.togglingEnabled .openSection.content_block.ajaxError {
+  min-height: 48px;
+  padding-left: 48px;
+  line-height: 48px;
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.togglingEnabled .openSection.content_block.loading {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+}
+.togglingEnabled .openSection.content_block.ajaxError {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/warning.png?2012-10-30T23:26:40Z);
+}
+.page-loading .section_anchors,
+.page-loading .content_block,
+.togglingEnabled .content_block {
+  display: none;
+}
+.page-loading .section_anchors.openSection,
+.page-loading .content_block.openSection,
+.togglingEnabled .content_block.openSection {
+  display: block;
+}
+.togglingEnabled .openSection.content_block {
+  display: block;
+}
+.section_anchors a {
+  display: block;
+}
+.section_anchor {
+  height: 1px;
+  width: 1px;
+}
+#content_wrapper .section {
+  clear: both;
+  border-bottom: solid 1px #E2E3E4;
+}
+
+/* the following definitions exist to deal with certain inline styles
+present in wikitext.
+This file should not need to exist
+IMPORTANT: do not use selectors containing attribute notation e.g. [style] [colspan]
+	as they are known to damage the ios app
+*/
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  border: 1px solid #cccccc;
+  padding: 3px;
+  margin-bottom: 15px;
+  float: none !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+table.gallery .thumb {
+  border: 0;
+  padding: 0 !important;
+  width: auto !important;
+  margin: 0 auto;
+}
+table.geography td {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+table.gallery .gallerybox {
+  width: auto !important;
+  margin-bottom: -16px;
+}
+.thumb .thumbinner {
+  margin: 5px auto;
+  max-width: 100%;
+}
+img.tex,
+.thumb img {
+  max-width: 100% !important;
+  width: auto !important;
+}
+.thumb .thumbcaption {
+  width: 100%;
+  margin: 5px 10px 0;
+  text-align: center;
+  width: auto !important;
+}
+/* bug 20030 */
+.thumb .noresize {
+  width: 100%;
+  overflow-x: auto;
+}
+.thumb .noresize img {
+  max-width: none !important;
+}
+.thumb .thumbinner > div {
+  float: none !important;
+  width: auto !important;
+  clear: both !important;
+}
+
+/* the following definitions exist to deal with certain inline styles present in wikitext
+and MediaWiki:Common.css definitions that are specific to English Wikipedia (and those who copied from en.wp).
+This file should not need to exist
+IMPORTANT: do not use selectors containing attribute notation e.g. [style] [colspan]
+        as they are known to damage the ios app
+*/
+.mobile #coordinates {
+  display: none;
+  /* TODO: style for mobile */
+
+}
+.dablink {
+  margin-bottom: 10px;
+}
+table.navbox td.navbox-group {
+  background: #ddddff;
+  width: 25%;
+  padding: 3px;
+}
+table.navbox th.navbox-title {
+  background: #ccccff;
+  padding: 5px;
+}
+table.navbox td.navbox-abovebelow {
+  padding: 3px;
+}
+table.navbox td.navbox-group + td {
+  padding: 3px;
+}
+table.navbox td,
+table.navbox th {
+  padding: 0;
+}
+table.navbox table {
+  margin-bottom: 0;
+}
+table.infobox {
+  background: #f9f9f9;
+}
+table.infobox caption {
+  display: block;
+}
+table.infobox th,
+table.infobox td {
+  border: 0;
+}
+@media all and (max-width: 500px) {
+  /* styling for warning boxes (see bug 36674)*/
+  .mobile td.mbox-image div {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .mobile .mbox-text div {
+    text-align: center !important;
+  }
+  .mobile th.mbox-text,
+  .mobile td.mbox-text,
+  .mobile td.mbox-image {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center !important;
+  }
+  .mobile table.ambox-content {
+    border-left: 1px solid #AAA;
+    box-sizing: border-box;
+    border-bottom: 10px solid #F28500;
+  }
+}
+.navbox .hlist dd,
+.navbox .hlist dt,
+.navbox .hlist li {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+}
+/* force portals to use a one column layout on mobile */
+.mobile .portal-column-left-wide,
+.mobile .portal-column-left,
+.mobile .portal-column-right,
+.mobile .portal-column-right-narrow {
+  float: none;
+  width: 100%;
+}
+.collapsible td {
+  width: auto !important;
+}
+table.navbox {
+  font-size: 0.9em;
+  width: 100% !important;
+}
+table.navbox div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+table.navbox div a,
+table.navbox span {
+  white-space: pre-wrap !important;
+}
+table.infobox {
+  text-align: center !important;
+}
+table.infobox td,
+table.infobox th {
+  border: 1px solid #cccccc;
+}
+/* bug 34878: Set an optimal width for a column.
+ * Makes sure that on small screens column-count is only honored if column-width hint is not violated.
+ * https://developer.mozilla.org/en-US/docs/CSS/column-width
+ */
+.references-column-count {
+  -moz-column-width: 35em;
+  -webkit-column-width: 35em;
+  column-width: 35em;
+}/* Styling of sections and toggling
+moved from beta_common.css in
+Change-Id: I683d029d09340a460b02016c5c4fbd6ada5a9b35
+*/
+.section_heading button {
+  display: none;
+  /* for non-js browsers */
+
+  overflow: hidden;
+  width: 27px;
+  border: none;
+  text-indent: -999px;
+  float: right;
+  cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.page-loading .section {
+  opacity: 0.2;
+}
+.page-loading.togglingEnabled .section {
+  opacity: 1;
+}
+.page-loading.togglingEnabled .section_heading button {
+  display: none;
+}
+.togglingEnabled .section_heading#section_0 button {
+  background-position: right bottom;
+}
+.togglingEnabled .section_heading button {
+  display: inline-block;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-background-size: auto 9px;
+  background-size: auto 9px;
+}
+.togglingEnabled .section_heading.openSection button {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/hide.png?2012-10-30T23:26:40Z);
+}
+.togglingEnabled .section_heading button {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/show.png?2012-10-30T23:26:40Z);
+}
+.openSection button {
+  opacity: 1;
+}
+.beta .section_anchors,
+.togglingEnabled .section_anchors {
+  display: none;
+}
+.content_block {
+  width: 100%;
+}
+.togglingEnabled .content_block {
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* fix for Bug 36196 */
+
+}
+.togglingEnabled #footer .content_block,
+.togglingEnabled .content_block:last-child {
+  border-bottom: none;
+}
+.togglingEnabled .openSection.section_anchors {
+  display: block;
+  margin-bottom: 5px;
+}
+.togglingEnabled .openSection.content_block {
+  -webkit-tap-highlight-color: normal;
+  /* fix for Bug 36196 */
+
+}
+.togglingEnabled .openSection.content_block.loading,
+.togglingEnabled .openSection.content_block.ajaxError {
+  min-height: 48px;
+  padding-left: 48px;
+  line-height: 48px;
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.togglingEnabled .openSection.content_block.loading {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+}
+.togglingEnabled .openSection.content_block.ajaxError {
+  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/warning.png?2012-10-30T23:26:40Z);
+}
+.page-loading .section_anchors,
+.page-loading .content_block,
+.togglingEnabled .content_block {
+  display: none;
+}
+.page-loading .section_anchors.openSection,
+.page-loading .content_block.openSection,
+.togglingEnabled .content_block.openSection {
+  display: block;
+}
+.togglingEnabled .openSection.content_block {
+  display: block;
+}
+.section_anchors a {
+  display: block;
+}
+.section_anchor {
+  height: 1px;
+  width: 1px;
+}
+#content_wrapper .section {
+  clear: both;
+  border-bottom: solid 1px #E2E3E4;
+}/*
+REFERENCES
+moved from beta_common.css
+Change-Id: I48b03d0b2de13ae34b22f4831d1b80aa1f446b4e
+*/
+ol.references > li:target,
+sup.reference:target,
+span.citation:target,
+cite:target {
+	background-color: #ddeeff;
+}/* empty until further notice */
