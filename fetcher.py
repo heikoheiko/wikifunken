@@ -2,12 +2,11 @@
 """
 based on: https://github.com/gwik/geventhttpclient
 """
-import sys, os, hashlib
 import gevent.pool
-from geventhttpclient import HTTPClient
-import layout
+from geventhttpclient import HTTPClient, Header
+
 HTTPClient.DEFAULT_HEADERS = {
-    HTTPClient.Header('User-Agent'): 'Wikipedia Version 1.0 Bot'
+    Header('User-Agent'): 'Wikipedia Version 1.0 Bot'
 }
 
 class Fetcher(object):
