@@ -25,6 +25,7 @@ class Fetcher(object):
 
     def get_client(self,url):
         server = '/'.join(url.split('/')[:3]) + '/'
+        print "SERVER",  server
         if not server in self.http_clients:
             self.http_clients[server]  = HTTPClient.from_url(server, concurrency=self.concurrency)
         return self.http_clients[server]

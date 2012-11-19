@@ -45,4 +45,9 @@ def search():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    if len(sys.argv): # debug
+        app.run(debug=True, host='0.0.0.0')
+    else:
+        from gevent.wsgi import WSGIServer
+        http_server = WSGIServer(('', 5000), app)
+        http_server.serve_forever()
