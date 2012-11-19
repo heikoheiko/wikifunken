@@ -2,15 +2,15 @@
 '''
 pip install whoosh
 '''
-import sys, os
-import urllib2
-import time
-from lxml import etree
-
+import sys
 from whoosh.index import open_dir
-from whoosh.fields import TEXT, ID, Schema
 from whoosh.qparser import QueryParser
-from indexarticles import schema
+
+
+def suggest(ix, term):
+    s = ix.searcher()
+    c = s.corrector('title') # just use page titles as dictionary
+    return c.suggest(term.lower(), limit=50, maxdist=20, prefix=len(term)) # will be all lowercase
 
 def main(index_dir, query_string):
 
@@ -24,8 +24,6 @@ def main(index_dir, query_string):
         print 'R:', results
         for r in results:
             print r
-
-
 
     return ix
 
