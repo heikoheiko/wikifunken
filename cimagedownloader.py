@@ -1,12 +1,18 @@
 #!/usr/bin/env python
 """
 based on: https://github.com/gwik/geventhttpclient
+This one totally rocks, fetches 100 images / second from wikipedia servers
+avg. image size is 17.4K
+1,7MB/s ~ 13 MBit / sec
+
+downloads the 400K images for a 50K collection in 1 hour
+
 """
 import sys, os, hashlib
 import gevent.pool
 from geventhttpclient import HTTPClient
-from geventhttpclient.url import URL
-user_agent = 'Wikipedia 1.0 Bot'
+import layout
+#user_agent = 'Wikipedia 1.0 Bot'
 
 http_clients = dict()
 
@@ -29,9 +35,6 @@ def fetch(http, url, fn, pool, num):
     else:
         print 'err', response.status_code, url
 
-def url2fn(url):
-    ext = url.split('.')[-1]
-    return hashlib.md5(url).hexdigest() + '.' + ext
 
 def main():
     urls_fn = sys.argv[1]
@@ -45,7 +48,7 @@ def main():
     for i,url in enumerate(open(urls_fn)):  
 	#if i> 400: break
         url = url.strip()
-        fn = os.path.join(images_dir, url2fn(url))
+        fn = os.path.join(images_dir, layout.url2fn(url))
         if not os.path.exists(fn):
             http = get_client(url)
             pool.spawn(fetch, http, url, fn, pool, i)

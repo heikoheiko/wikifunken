@@ -14,6 +14,9 @@ Stats:
 
 import sys, os
 from lxml import etree
+import layout
+
+
 
 def parse_article(fn):
     parser = etree.HTMLParser()
@@ -21,7 +24,7 @@ def parse_article(fn):
     e = tree.getroot()
     for i in e.xpath('.//img'):
         try:
-            print 'http:%s' % i.get('src')
+            print layout.norm_ext_img_url(i.get('src'))
         except UnicodeEncodeError:
             sys.stderr.write('UnicodeError %s %r \n' %(fn, i.get('src')))
 

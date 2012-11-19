@@ -8,17 +8,16 @@ that this is making the most effective use of the primitves at hand.
 The fetch function does all the work of making http requests,
 searching for new urls, and dispatching new fetches.  The GreenPool
 acts as sort of a job coordinator (and concurrency controller of
-course).
-
-!!!! alternative: https://github.com/gwik/geventhttpclient
+course)
 """
 from __future__ import with_statement
 
 from eventlet.green import urllib2
 import eventlet
 import sys, os, hashlib, time
+import layout
 
-pool_size = 5
+pool_size = 20
 pool = eventlet.GreenPool(pool_size)
 user_agent = 'Wikipedia 1.0 Bot'
 
@@ -50,18 +49,13 @@ def fetchall(urlfns):
         pool.spawn_n(fetch, urlfns.pop(), urlfns)
     pool.waitall()
 
-def url2fn(url):
-    ext = url.split('.')[-1]
-    return hashlib.md5(url).hexdigest() + '.' + ext
-
-
 def main():
     urls_fn = sys.argv[1]
     images_dir = sys.argv[2]
     urlfns = []
     for url in open(urls_fn):
         url = url.strip()
-        fn = os.path.join(images_dir, url2fn(url))
+        fn = os.path.join(images_dir, layout.ext_img_url2fn(url))
         if not os.path.exists(fn):
             urlfns.append((url, fn))
     fetchall(urlfns)

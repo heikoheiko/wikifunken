@@ -1,0 +1,283 @@
+/* MediaWiki:Mobile.css */
+/* CSS placed here will affect users of the mobile site */
+#wpTextbox1 { display: none; } /* temporary hack until https://gerrit.wikimedia.org/r/#/c/31032/ is merged and deployed (hides main editing box on edit page) */
+
+/* list indentation */
+/* DONT COPY TO OTHER WIKIS ! */
+#content ul,
+#content ol,
+#content dl {
+  margin-left: 8px;
+}
+
+/* Styling for citations (CSS3). Breaks long urls, etc., rather than overflowing box */
+.citation {
+    word-wrap: break-word;
+}
+
+/* Default styling for titles of works, styling for the title of an article
+   within a periodical, or a contribution within a compilation. */
+cite,
+.citation cite.article,
+.citation cite.contribution {
+    font-style: inherit;
+}
+
+/* Styling for the title of any work within a citation,
+   or specifically the title of a periodical. */
+.citation cite,
+.citation cite.periodical {
+    font-style: italic;
+}
+
+/* For linked citation numbers and document IDs, where
+   the number need not be shown on a screen or a handheld,
+   but should be included in the printed version */
+@media screen, handheld {
+    .citation *.printonly {
+        display: none;
+    }
+}
+
+/* Default styling for Navbar template */
+.navbar {
+    display: inline;
+    font-size: 88%;
+    font-weight: normal;
+}
+.navbar ul {
+    display: inline;
+    white-space: nowrap;
+}
+.navbar li {
+    word-spacing: -0.125em;
+}
+.navbar.mini li span {
+  font-variant: small-caps;
+}
+/* Navbar styling when nested in infobox and navbox */
+.infobox .navbar {
+    font-size: 100%;
+}
+.navbox .navbar {
+    display: block;
+    font-size: 100%;
+}
+.navbox-title .navbar {
+    /* @noflip */
+    float: left;
+    /* @noflip */
+    text-align: left;
+    /* @noflip */
+    margin-right: 0.5em;
+    width: 6em;
+}
+
+/* Style for horizontal lists (separator following item) */
+.hlist dl,
+.hlist ol,
+.hlist ul {
+    margin: 0;
+    padding: 0;
+}
+/* Display list items inline and make them nowrap */
+.hlist dd,
+.hlist dt,
+.hlist li {
+    margin: 0;
+    display: inline;
+    white-space: nowrap;
+}
+/* Display nested lists inline and allow them to wrap */
+.hlist dl dl, .hlist dl ol, .hlist dl ul,
+.hlist ol dl, .hlist ol ol, .hlist ol ul,
+.hlist ul dl, .hlist ul ol, .hlist ul ul {
+    display: inline;
+    white-space: normal;
+}
+/* Generate interpuncts */
+.hlist dt:after {
+    content: ":";
+}
+.hlist dd:after,
+.hlist li:after {
+    content: " ·";
+    font-weight: bold;
+}
+.hlist dd:last-child:after,
+.hlist dt:last-child:after,
+.hlist li:last-child:after {
+    content: none;
+}
+/* Add parentheses around nested lists */
+.hlist dd dd:first-child:before, .hlist dd dt:first-child:before, .hlist dd li:first-child:before,
+.hlist dt dd:first-child:before, .hlist dt dt:first-child:before, .hlist dt li:first-child:before,
+.hlist li dd:first-child:before, .hlist li dt:first-child:before, .hlist li li:first-child:before {
+    content: "(";
+    font-weight: normal;
+}
+.hlist dd dd:last-child:after, .hlist dd dt:last-child:after, .hlist dd li:last-child:after,
+.hlist dt dd:last-child:after, .hlist dt dt:last-child:after, .hlist dt li:last-child:after,
+.hlist li dd:last-child:after, .hlist li dt:last-child:after, .hlist li li:last-child:after {
+    content: ")";
+    font-weight: normal;
+}
+/* Put numbers in front of ordered list items */
+.hlist.hnum ol {
+    counter-reset: list-item;
+}
+.hlist.hnum ol > li {
+    counter-increment: list-item;
+}
+.hlist.hnum ol > li:before {
+    content: counter(list-item) " ";
+}
+.hlist.hnum dd ol > li:first-child:before,
+.hlist.hnum dt ol > li:first-child:before,
+.hlist.hnum li ol > li:first-child:before {
+    content: "(" counter(list-item) " ";
+}
+ 
+/* Unbulleted lists */
+.plainlist ul {
+    line-height: inherit;
+    list-style: none none;
+    margin: 0;
+}
+.plainlist ul li {
+    margin-bottom: 0;
+}
+
+/* CODE FOR COMPACT AMBOX */
+/* Hide the images */
+.compact-ambox table .mbox-image,
+.compact-ambox table .mbox-imageright,
+.compact-ambox table .mbox-empty-cell {
+    display: none;
+}
+/* Remove borders, backgrounds, padding, etc. */
+.compact-ambox table.ambox {
+    border: none;
+    border-collapse: collapse;
+    background: transparent;
+    margin: 0 0 0 1.6em !important;
+    padding: 0 !important;
+    width: auto;
+    display: block;
+}
+.compact-ambox table.mbox-small-left {
+    font-size: 100%;
+    width: auto;
+    margin: 0;
+}
+/* Style the text cell as a list item and remove its padding */
+.compact-ambox table .mbox-text {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.compact-ambox table .mbox-text-span {
+    display: list-item;
+    line-height: 1.5em;
+    list-style-type: square;
+    list-style-image: url("data:image/gif;base64,R0lGODlhBQANAIAAAGOMnP///yH5BAEAAAEALAAAAAAFAA0AAAIJjI+pu+APo4SpADs=");
+}
+/* Allow for hiding text in compact form */
+.compact-ambox .hide-when-compact {
+    display: none;
+}
+
+/* Removes underlines from certain links */
+.nounderlines a,
+.IPA a:link, .IPA a:visited {
+    text-decoration: none !important;
+}
+
+/* Hatnotes and disambiguation notices */
+.rellink,
+.dablink {
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+.rellink i,
+.dablink i {
+    font-style: normal;
+}
+
+/* Geographical coordinates defaults. See [[Template:Coord/link]]
+   for how these are used. The classes "geo", "longitude", and
+   "latitude" are used by the [[Geo microformat]]. */
+.geo-default, .geo-dms, .geo-dec  { display: inline; }
+.geo-nondefault, .geo-multi-punct { display: none; }
+.longitude, .latitude             { white-space: nowrap; }
+
+/* Prevent line breaks in silly places:
+   1) Where desired
+   2) Links when we don't want them to
+   3) Bold "links" to the page itself
+   4) Ref tags with group names <ref group="Note"> --> "[Note 1]" */
+.nowrap,
+.nowraplinks a,
+.nowraplinks .selflink,
+sup.reference a {
+    white-space: nowrap;
+}
+
+/* Hide stuff meant for accounts with special permissions. Made visible again in
+   [[MediaWiki:Group-sysop.css]] and [[MediaWiki:Group-accountcreator.css]]. */
+.sysop-show, .accountcreator-show {
+    display: none;
+}
+
+/* DONT COPY TO OTHER WIKIS ! */
+	/* Galleries */
+/* Force remove some inline styling */
+li.gallerybox div,
+li.gallerybox div div.thumb {
+    width: auto !important;
+}
+
+	/* These display attributes look nonsensical, but are needed to support IE and FF2 */
+	/* Don't forget to update commonPrint.css */
+	li.gallerybox {
+		vertical-align: top;
+		display: -moz-inline-box;
+		display: inline-block;
+	}
+	
+	ul.gallery,
+	li.gallerybox {
+		zoom: 1;
+		*display: inline;
+	}
+	
+	ul.gallery {
+		margin: 2px;
+		padding: 2px;
+		display: block;
+	}
+	
+	li.gallerycaption {
+		font-weight: bold;
+		text-align: center;
+		display: block;
+		word-wrap: break-word;
+	}
+	
+	li.gallerybox div.thumb {
+		text-align: center;
+		border: 1px solid #ccc;
+		background-color: #f9f9f9;
+		margin: 2px;
+	}
+	
+	li.gallerybox div.thumb img {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	div.gallerytext {
+		overflow: hidden;
+		font-size: 94%;
+		padding: 2px 4px;
+		word-wrap: break-word;
+	}

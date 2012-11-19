@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for hit in results %}
+<div id="results"  class="mw-mf-checkboxes full-screen-search">
+<ul class="suggestions-results">
+    <li class="suggestions-result">
+        <a class="search-result-item" href='wiki/{{hit["title"]}}'>{{hit['title']}}</a>
+    </li>
+</ul>
+</div>
+{% endfor %}
+{% endblock %}

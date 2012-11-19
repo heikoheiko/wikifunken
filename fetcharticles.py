@@ -17,7 +17,6 @@ def safe_fn(fn):
 
 def fetch(name):
     url = 'http://en.m.wikipedia.org/wiki/' + urllib2.quote(name.encode('utf8'), safe='')
-    print 'fetching', url
     req = urllib2.Request(url, headers={'User-Agent':user_agent})
     res = urllib2.urlopen(req)
     return res.read()
@@ -33,9 +32,10 @@ def main(articles_fn, out_dir):
  #           print 'already there', fn
             continue
         try:
+            print 'fetching', i, name
             html = fetch(name)
         except (urllib2.HTTPError,KeyError, urllib2.URLError) , e:
-            print repr(name), name, e
+            print i, repr(name), name, e
             continue
         open(fn, 'w').write(html)
         time.sleep(fetch_delay)

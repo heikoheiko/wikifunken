@@ -20,8 +20,8 @@ def parse_article(fn):
     tree   = etree.parse(open(fn), parser)
     e = tree.getroot()
     # links
-    #for a in e.xpath('.//a'):
-    #    print a, a.get('name'),  a.get('href'), [(e, e.get('class')) for e in a.xpath('ancestor-or-self::*[@class]')]
+    for a in e.xpath('.//a'):
+        print a, a.get('name'),  a.get('href'), [(e, e.get('class')) for e in a.xpath('ancestor-or-self::*[@class]')]
 
     # images
 
