@@ -9,18 +9,16 @@ The fetch function does all the work of making http requests,
 searching for new urls, and dispatching new fetches.  The GreenPool
 acts as sort of a job coordinator (and concurrency controller of
 course).
-"""
-"""
+
 !!!! alternative: https://github.com/gwik/geventhttpclient
 """
-
 from __future__ import with_statement
 
 from eventlet.green import urllib2
 import eventlet
 import sys, os, hashlib, time
 
-pool_size = 10
+pool_size = 5
 pool = eventlet.GreenPool(pool_size)
 user_agent = 'Wikipedia 1.0 Bot'
 
