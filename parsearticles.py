@@ -132,8 +132,8 @@ def rewrite_scripts(troot):
 
 def remove_language_section(troot):
     #<div class="section" id="mw-mf-language-section">
-    s = troot.xpath('.//div[@id="mw-mf-language-section"]')[0]
-    s.xpath('..')[0].remove(s)
+    for s in troot.xpath('.//div[@id="mw-mf-language-section"]'):
+        s.xpath('..')[0].remove(s)
 
 
 def remove_class_noprint(troot):

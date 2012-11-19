@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 __author__ = 'heiko'
-import os
+import os, sys
 import flask
 from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
