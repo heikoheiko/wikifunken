@@ -6,9 +6,9 @@ import sys, os, hashlib
 import gevent.pool
 from geventhttpclient import HTTPClient
 import layout
-#user_agent = 'Wikipedia 1.0 Bot'
-
-
+HTTPClient.DEFAULT_HEADERS = {
+    HTTPClient.Header('User-Agent'): 'Wikipedia Version 1.0 Bot'
+}
 
 class Fetcher(object):
     concurrency = 10
