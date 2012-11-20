@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+ 
+START=99
+STOP=10
+ 
+start() {        
+        echo start
+        # commands to launch application
+	/root/www/webappd
+}                 
+ 
+stop() {          
+        echo stop
+        # commands to kill application 
+	kill `cat /var/run/webappd.pid`
+	rm /var/run/webappd.pid
+}	
