@@ -62,7 +62,7 @@ button.disabled {
   opacity: 0.2;
 }
 a.external {
-  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/external-link-ltr-icon.png?2012-10-30T23:26:40Z) center right no-repeat;
+  background: url(/static/cssimages/0b47dcff02e0ecd91d749e9072cfc34e) center right no-repeat;
   padding-right: 13px;
 }
 #mw-mf-edit-page-link {
@@ -215,7 +215,7 @@ table.floatright {
   text-align: center;
 }
 #disableButtons button {
-  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/buttonbg.gif?2012-10-30T23:26:40Z) no-repeat center;
+  background: url(/static/cssimages/2848600cf6df3c625dcb52d5d2ffc0a3) no-repeat center;
   border: 0;
   height: 23px;
   width: 83px;
@@ -571,7 +571,7 @@ input[type=submit].languageSelector {
   display: inline-block;
   height: 46px;
   width: 40px;
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/main.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/7533f0a54f2af0076198a4fac2e79ead);
   /* use -webkit prefix for older android browsers eg. nexus 1 */
 
   -moz-background-size: 24px 30px;
@@ -588,7 +588,7 @@ input[type=submit].languageSelector {
   background-position: center center;
 }
 .jsEnabled #mw-mf-main-menu-button {
-  background-image: url(data:image/png;base64,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); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/main.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,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); url(/static/cssimages/3e2c3c8d69912fc06b07100702c7fbab)!ie;
 }
 #mw-mf-main-menu-button:active {
   background-color: #f9f9f9;
@@ -696,46 +696,46 @@ input[type=submit].languageSelector {
   border-right: solid 1px black;
 }
 #mw-mf-menu-main li.icon a {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/home.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/3f3d047245071a672da66899f326c2c7);
 }
 #mw-mf-menu-main li.icon2 a {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/random.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/36a9620bc4cbef01fb415b956fac05ed);
 }
 #mw-mf-menu-main li.icon3 a {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/nearby.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/f4a5f19727d2ac8a8f940f760a428491);
 }
 #mw-mf-menu-main li.icon4 a {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/contact.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/97ed9f6a872ecfa0bfea19ce93943f72);
 }
 #mw-mf-menu-main li.icon5 a {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/settings.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/d870c037c956647cb8648552ba01066e);
 }
 #mw-mf-menu-main li.icon6 a.logout {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/logout.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/13d0827e3dbbdc66bced62a9b00c019d);
 }
 #mw-mf-menu-main li.icon6 a.login {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/lowres/login.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/a3ccc930fe89c4d39734110bffd5521b);
 }
 .jsEnabled #mw-mf-menu-main li.icon a {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzUlEQVRYw+2WUQ2DMBRFK6ESkIAEJCABCZOABCQgoRIqoRImoQ7OPpZtDDoK9LFsyTv83xvODS8Yoyjv0GLPjO+BSH1OuMXxoJOPrwlMGaXNR+YEsTUYSBNpJMx71riUmr+SYzysii5hPkWgkjQvsUbWfNkam8yncJvWoOM4IXtGGCkj0q6ZD0jQfzIfkWK5RpH53BrYYvPpNe5HnUrIfIrBGIPDPx+Zqleeny/RSOSvfQVfLwjT1916QPYUNIt/Ci3QAi3Qgv8vUJTf5AbOO3vjMryqbgAAAABJRU5ErkJggg==); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/home.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzUlEQVRYw+2WUQ2DMBRFK6ESkIAEJCABCZOABCQgoRIqoRImoQ7OPpZtDDoK9LFsyTv83xvODS8Yoyjv0GLPjO+BSH1OuMXxoJOPrwlMGaXNR+YEsTUYSBNpJMx71riUmr+SYzysii5hPkWgkjQvsUbWfNkam8yncJvWoOM4IXtGGCkj0q6ZD0jQfzIfkWK5RpH53BrYYvPpNe5HnUrIfIrBGIPDPx+Zqleeny/RSOSvfQVfLwjT1916QPYUNIt/Ci3QAi3Qgv8vUJTf5AbOO3vjMryqbgAAAABJRU5ErkJggg==); url(/static/cssimages/c814d1acb48e0deafbb47eca3400d3b4)!ie;
 }
 .jsEnabled #mw-mf-menu-main li.icon2 a {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVRYw+WXUbmEIBCFiWAEIxiBCEYgAhGIQAQiEMEIRjCCDc590LsryCwzyD7c757H/RYOnJn5VaX+ijB8a+MRBgE70P3EmOGx4a2519YaDivu8k83nmARQWt9lvKGuoaWlFfwZSQpL5Ar1MOwiNjRqo0Og5vyZTNYzLeiT2UDLz7r/lvQbK0tGxixgbvc/qpIZd9soFR6M6oKq9BgIW+veVWw52K6oyJGDIV/uLLBXO5nWHF4C9WoxWtmv/NUBkYyuYa4GU9lbMMlQzSc518bDDwF43SQPJxwtmvYZjAoQkN/fCYcGssGtYWxWC8+tqstObFLH9qAwTcggbF1iojEduhU5I7YPqbGwWc9GDnAELEHQxpwL2xfS29bsC1AG7Qc2xwZokVIYGQdDaMUpg/R7YdFAks2tl9J5iV8gu1rqbZH1Ql1bO+CISzMBwfb9mUrfaFciGm+YTtAwwq2X+GJGXgMjICZ9YUgfM/bEWGJZ5hqw/Y7ZUdguWoQqinP6okIYGwIMF0+uDNsHylPqqdO9ixwlZZrNtDMlvsH+gFbAHEqRZJyRwAAAABJRU5ErkJggg==); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/random.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVRYw+WXUbmEIBCFiWAEIxiBCEYgAhGIQAQiEMEIRjCCDc590LsryCwzyD7c757H/RYOnJn5VaX+ijB8a+MRBgE70P3EmOGx4a2519YaDivu8k83nmARQWt9lvKGuoaWlFfwZSQpL5Ar1MOwiNjRqo0Og5vyZTNYzLeiT2UDLz7r/lvQbK0tGxixgbvc/qpIZd9soFR6M6oKq9BgIW+veVWw52K6oyJGDIV/uLLBXO5nWHF4C9WoxWtmv/NUBkYyuYa4GU9lbMMlQzSc518bDDwF43SQPJxwtmvYZjAoQkN/fCYcGssGtYWxWC8+tqstObFLH9qAwTcggbF1iojEduhU5I7YPqbGwWc9GDnAELEHQxpwL2xfS29bsC1AG7Qc2xwZokVIYGQdDaMUpg/R7YdFAks2tl9J5iV8gu1rqbZH1Ql1bO+CISzMBwfb9mUrfaFciGm+YTtAwwq2X+GJGXgMjICZ9YUgfM/bEWGJZ5hqw/Y7ZUdguWoQqinP6okIYGwIMF0+uDNsHylPqqdO9ixwlZZrNtDMlvsH+gFbAHEqRZJyRwAAAABJRU5ErkJggg==); url(/static/cssimages/6ca098244865d6d334510f8077e6217c)!ie;
 }
 .jsEnabled #mw-mf-menu-main li.icon3 a {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeklEQVRYw81XW5HEIBBEQiQgAQlIiIRIQAISVgISkBAJkYAEHPR95OpuM5ksM4RUbX/D9LwfxggBC4+IiIgAj8mMAxwSCig2hAE0cFhxjYp4iwQRbRS4PuETMqRYeghWaKClQIIWXiN+ZgQkzHtA4RCwMQGf5N6v5HOGZZSgr169uZMuFaF2WBlBkYj/pShqG4j/S+O117zev7x06UfS2enyv6otbtfDITeyKOfeEdsfdM+pSo8QbDqCqiZQuug9yKto0imDfKzjZn9BUNYynM7kQy0Xfauon3Ui9sraHanl7dpNpFGIm5097Q/sRyykYa9GitM0rnRFgWUmtnxsnkzfSRIiPBZEZp5JA9w58vVjn7Xh43b0bWuL0ga9/kob5j4CKxS/ml6Qmh6x0zVXMGbju3cfhIb4evsIYav2H2HEjXONbcyNdh1qN4ZgYk5AzTbdeS+UsadsHpj9oorIZjQObqpD3cO4aTZP4M9NyTwFzMOzhyk6b74LP2asuzKjV1vvAAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/nearby.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeklEQVRYw81XW5HEIBBEQiQgAQlIiIRIQAISVgISkBAJkYAEHPR95OpuM5ksM4RUbX/D9LwfxggBC4+IiIgAj8mMAxwSCig2hAE0cFhxjYp4iwQRbRS4PuETMqRYeghWaKClQIIWXiN+ZgQkzHtA4RCwMQGf5N6v5HOGZZSgr169uZMuFaF2WBlBkYj/pShqG4j/S+O117zev7x06UfS2enyv6otbtfDITeyKOfeEdsfdM+pSo8QbDqCqiZQuug9yKto0imDfKzjZn9BUNYynM7kQy0Xfauon3Ui9sraHanl7dpNpFGIm5097Q/sRyykYa9GitM0rnRFgWUmtnxsnkzfSRIiPBZEZp5JA9w58vVjn7Xh43b0bWuL0ga9/kob5j4CKxS/ml6Qmh6x0zVXMGbju3cfhIb4evsIYav2H2HEjXONbcyNdh1qN4ZgYk5AzTbdeS+UsadsHpj9oorIZjQObqpD3cO4aTZP4M9NyTwFzMOzhyk6b74LP2asuzKjV1vvAAAAAElFTkSuQmCC); url(/static/cssimages/64bbfc4393faae1d04943678275f7fca)!ie;
 }
 .jsEnabled #mw-mf-menu-main li.icon4 a {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeUlEQVRYCe3BYXnCMBiF0SshEiohEiKhEiKhEiKhEiKhEiKhEiLhc/COwrPBWCkpK/84Rx8f/0KndyAQGSmA6Sg4AomJmSvD63/wRBIFY02vV+AIDGRmtg3aA09PolBpk9WCwMBIYa+ix+gIJCYq7SrG1YzTPQKRkYKx18TIzJXR6RaZmdfMDHgmbhlev1HYzxjxOBL3ou7h2Wci6oSIcW/QGjJtKgOdTggU/spah8PYZmS8zujIrJn1GInHChGnMxwJY82M0xYqf1USnX4QqawzvLbR81sm6AaBwmNez1H4ZnjdoCOzJaoFHd+ifuBIGFuS2uC5mPSDSGVbVisKi4rTGYHCM7NaMXARdIIj81zFqQ0dxiLphITxnOHViolFkeiptAlqRc/C6Cm0imqFw1hU2o1qR2avrD0oGHvMOL0GTyAQSGQeMZyOQGGN4XUMAmt6HYfMvagj0WHcyjoaiatJx8NRuZhxegd6FobTu1AwvN4HT9THx7YvS4MHJ8AwYSAAAAAASUVORK5CYII=); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/contact.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABeUlEQVRYCe3BYXnCMBiF0SshEiohEiKhEiKhEiKhEiKhEiKhEiLhc/COwrPBWCkpK/84Rx8f/0KndyAQGSmA6Sg4AomJmSvD63/wRBIFY02vV+AIDGRmtg3aA09PolBpk9WCwMBIYa+ix+gIJCYq7SrG1YzTPQKRkYKx18TIzJXR6RaZmdfMDHgmbhlev1HYzxjxOBL3ou7h2Wci6oSIcW/QGjJtKgOdTggU/spah8PYZmS8zujIrJn1GInHChGnMxwJY82M0xYqf1USnX4QqawzvLbR81sm6AaBwmNez1H4ZnjdoCOzJaoFHd+ifuBIGFuS2uC5mPSDSGVbVisKi4rTGYHCM7NaMXARdIIj81zFqQ0dxiLphITxnOHViolFkeiptAlqRc/C6Cm0imqFw1hU2o1qR2avrD0oGHvMOL0GTyAQSGQeMZyOQGGN4XUMAmt6HYfMvagj0WHcyjoaiatJx8NRuZhxegd6FobTu1AwvN4HT9THx7YvS4MHJ8AwYSAAAAAASUVORK5CYII=); url(/static/cssimages/5647c2e66f353b8a6ec7b06ee3cf43b3)!ie;
 }
 .jsEnabled #mw-mf-menu-main li.icon5 a {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABbklEQVRYw+2YW5XEIAyGkYCESqgEJCABCZWAhEpAwkhAQiWMBBz8+7DtdrmFUHrmzF7C2xz+fAxJk7RC/BGDgY/X3QCLxN4dgKkXkCpo9w4Bcw8gV9DuAZwCaDg8UwA2rMepUwXH/S6AKbj+bh5zrOC7v2Y0Ytg9jcCKeyxUMgozwi0AV7+iOxCODvIowvWkaZr3FgoKCoZIBtUsEbVsT/bJSkq0qmxRZit7VfE66UetILFkxPqiANX7l7FkiifH7WnNIkzUKt8GPBjFcRkBGE5rGgEoVv8I1wGSBfDXAawmWA0zA6BZgIEYrAz3ug2YYPf1aD40nOJ4eDOclFtEq7xnVZcWbD1NHDLb3zoSDL+JQxb7guxPulDKJkyF03PSIgv00XJ0dPPuakejJ6MNHp7s2v+D148bvDwDGO9hDF4nwgkBCUt1XehUwSm/nwIX/ZI3leUMZa5oI9a+l8Bc8evfk18PmPbR/Wu9zWeUD81pSK7tdzcOAAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/settings.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAAYagMeiWXwAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABbklEQVRYw+2YW5XEIAyGkYCESqgEJCABCZWAhEpAwkhAQiWMBBz8+7DtdrmFUHrmzF7C2xz+fAxJk7RC/BGDgY/X3QCLxN4dgKkXkCpo9w4Bcw8gV9DuAZwCaDg8UwA2rMepUwXH/S6AKbj+bh5zrOC7v2Y0Ytg9jcCKeyxUMgozwi0AV7+iOxCODvIowvWkaZr3FgoKCoZIBtUsEbVsT/bJSkq0qmxRZit7VfE66UetILFkxPqiANX7l7FkiifH7WnNIkzUKt8GPBjFcRkBGE5rGgEoVv8I1wGSBfDXAawmWA0zA6BZgIEYrAz3ug2YYPf1aD40nOJ4eDOclFtEq7xnVZcWbD1NHDLb3zoSDL+JQxb7guxPulDKJkyF03PSIgv00XJ0dPPuakejJ6MNHp7s2v+D148bvDwDGO9hDF4nwgkBCUt1XehUwSm/nwIX/ZI3leUMZa5oI9a+l8Bc8evfk18PmPbR/Wu9zWeUD81pSK7tdzcOAAAAAElFTkSuQmCC); url(/static/cssimages/a49e64c352683d7daa43b144e8342a97)!ie;
 }
 .jsEnabled #mw-mf-menu-main li.icon6 a.logout {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXxJREFUeNq0V+1RxCAQxYz/Lx2IHdDBYQfpwJSQElJCSsAOYgfYAXbAdRAr4JaTOBH5WjjfzMuPDZk3C/vYDTHGkAqOwBW4md+QwAnYx77FClGgMnlsTrhJkAYyymH1s8UISlMHVSPIC7Zvz2QAam/NghUUCUEeWN8Htp/Zdx0pA43E34EyEN+Asxeb7KNUMAaFePd6D0GKfMdLBXUkPiREx1CwVFBG4ifgCmSHWA8UwHPog4dbqebRuyxPiTWfrljOiTUvGONPpg0bxhYWC/DSUGDL7YnIcG7ITu83UanY0LiVDHO1sUSXyHUP4XeLx4LqFJHqvDg72DXc86N2Vvrr34ZLm9VMC7U2GCtHE5I6t9S5kFp2kXOTlR0ij8pRQtxrSxeEv6ZWwZS5ZzdKbKHBqEaQZUysnIGpG/1oq2DpcMtbKtRy74ehpvjl+tuTF39OTABZdD+N8VvAn7Ls1fVxiL21iPm2OP43iED1qtRPCnZL/WlLk3/CVYABAIOVKIlKN1B9AAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/logout.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXxJREFUeNq0V+1RxCAQxYz/Lx2IHdDBYQfpwJSQElJCSsAOYgfYAXbAdRAr4JaTOBH5WjjfzMuPDZk3C/vYDTHGkAqOwBW4md+QwAnYx77FClGgMnlsTrhJkAYyymH1s8UISlMHVSPIC7Zvz2QAam/NghUUCUEeWN8Htp/Zdx0pA43E34EyEN+Asxeb7KNUMAaFePd6D0GKfMdLBXUkPiREx1CwVFBG4ifgCmSHWA8UwHPog4dbqebRuyxPiTWfrljOiTUvGONPpg0bxhYWC/DSUGDL7YnIcG7ITu83UanY0LiVDHO1sUSXyHUP4XeLx4LqFJHqvDg72DXc86N2Vvrr34ZLm9VMC7U2GCtHE5I6t9S5kFp2kXOTlR0ij8pRQtxrSxeEv6ZWwZS5ZzdKbKHBqEaQZUysnIGpG/1oq2DpcMtbKtRy74ehpvjl+tuTF39OTABZdD+N8VvAn7Ls1fVxiL21iPm2OP43iED1qtRPCnZL/WlLk3/CVYABAIOVKIlKN1B9AAAAAElFTkSuQmCC); url(/static/cssimages/5533b3002a128cf65077a80b2c76d53a)!ie;
 }
 .jsEnabled #mw-mf-menu-main li.icon6 a.login {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXxJREFUeNq0V+1RxCAQxYz/Lx2IHdDBYQfpwJSQElJCSsAOYgfYAXbAdRAr4JaTOBH5WjjfzMuPDZk3C/vYDTHGkAqOwBW4md+QwAnYx77FClGgMnlsTrhJkAYyymH1s8UISlMHVSPIC7Zvz2QAam/NghUUCUEeWN8Htp/Zdx0pA43E34EyEN+Asxeb7KNUMAaFePd6D0GKfMdLBXUkPiREx1CwVFBG4ifgCmSHWA8UwHPog4dbqebRuyxPiTWfrljOiTUvGONPpg0bxhYWC/DSUGDL7YnIcG7ITu83UanY0LiVDHO1sUSXyHUP4XeLx4LqFJHqvDg72DXc86N2Vvrr34ZLm9VMC7U2GCtHE5I6t9S5kFp2kXOTlR0ij8pRQtxrSxeEv6ZWwZS5ZzdKbKHBqEaQZUysnIGpG/1oq2DpcMtbKtRy74ehpvjl+tuTF39OTABZdD+N8VvAn7Ls1fVxiL21iPm2OP43iED1qtRPCnZL/WlLk3/CVYABAIOVKIlKN1B9AAAAAElFTkSuQmCC); url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/menu/login.png?2012-10-30T23:26:40Z)!ie;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAfCAYAAAD0ma06AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXxJREFUeNq0V+1RxCAQxYz/Lx2IHdDBYQfpwJSQElJCSsAOYgfYAXbAdRAr4JaTOBH5WjjfzMuPDZk3C/vYDTHGkAqOwBW4md+QwAnYx77FClGgMnlsTrhJkAYyymH1s8UISlMHVSPIC7Zvz2QAam/NghUUCUEeWN8Htp/Zdx0pA43E34EyEN+Asxeb7KNUMAaFePd6D0GKfMdLBXUkPiREx1CwVFBG4ifgCmSHWA8UwHPog4dbqebRuyxPiTWfrljOiTUvGONPpg0bxhYWC/DSUGDL7YnIcG7ITu83UanY0LiVDHO1sUSXyHUP4XeLx4LqFJHqvDg72DXc86N2Vvrr34ZLm9VMC7U2GCtHE5I6t9S5kFp2kXOTlR0ij8pRQtxrSxeEv6ZWwZS5ZzdKbKHBqEaQZUysnIGpG/1oq2DpcMtbKtRy74ehpvjl+tuTF39OTABZdD+N8VvAn7Ls1fVxiL21iPm2OP43iED1qtRPCnZL/WlLk3/CVYABAIOVKIlKN1B9AAAAAElFTkSuQmCC); url(/static/cssimages/43f6cb5b4fa10dff343a9ab31e9e1d23)!ie;
 }
 #mw-mf-menu-main li.disabled {
   opacity: 0.2;
@@ -818,7 +818,7 @@ html.overlay ul.content li:hover {
 }
 #mw-mf-overlay .alert.info {
   padding-left: 106px;
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/W.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/0407cb04ce07660a6b32de5b9a707bb5);
   padding-top: 24.5px;
   padding-bottom: 8px;
   font-size: 1.2em;
@@ -838,7 +838,7 @@ html.overlay ul.content li:hover {
 #mw-mf-overlay .alert.tip.tip-watchlist {
   /* TODO: swap out for better images */
 
-  background-image: url(../modules/images/watchlist.png);
+  background-image: url(/static/cssimages/abfb5cc8aaaeac9d23f1572d7864b86f);
   background-position: -78px center;
   /* use -webkit prefix for older android browsers eg. nexus 1 */
 
@@ -849,11 +849,11 @@ html.overlay ul.content li:hover {
 }
 #mw-mf-overlay .alert.success {
   border: solid 2px #008000;
-  background-image: url(images/success.png);
+  background-image: url(/static/cssimages/78c0c709f755445a9d4911803f4062fa);
 }
 #mw-mf-overlay .alert.error {
   border: solid 2px #ff0000;
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/fail.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/b2b9aff73fd2742d68d332cc0d36ac1b);
 }
 #mw-mf-overlay .alert h2 {
   margin: 0 0 8px 0;
@@ -907,7 +907,7 @@ button.escapeOverlay {
   top: 0;
   left: 0;
   background: none;
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/arrow-left-2.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/441d646f3f7edf853327a2236e17eb50);
   background-repeat: no-repeat;
   background-position: center center;
   text-indent: -999px;
@@ -1027,7 +1027,7 @@ body {
 
   width: 16px;
   height: 12px;
-  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/../common/images/close-button-beta.png?2012-10-30T23:26:40Z) no-repeat scroll 0 0 transparent;
+  background: url(/static/cssimages/29e1292853b3fb8fb2eb8130289f5b35) no-repeat scroll 0 0 transparent;
   margin: 0;
   background-position: right center;
   /* use -webkit prefix for older android browsers eg. nexus 1 */
@@ -1118,7 +1118,7 @@ input.search.searching {
   right: 8px;
   width: 24px;
   height: 30px;
-  background: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/../common/images/close-button-beta.png?2012-10-30T23:26:40Z) no-repeat scroll 0 0 transparent;
+  background: url(/static/cssimages/0b89165cf651cadd3fde0b60ec973ff8) no-repeat scroll 0 0 transparent;
   margin: 0;
   display: none;
   background-position: right center;
@@ -1571,10 +1571,10 @@ Change-Id: I683d029d09340a460b02016c5c4fbd6ada5a9b35
   background-size: auto 9px;
 }
 .togglingEnabled .section_heading.openSection button {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/hide.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/377cb47b31e14b67f7f4eb4ce0e13b66);
 }
 .togglingEnabled .section_heading button {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/show.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/2ed07e029043632990497e8dc5ce3172);
 }
 .openSection button {
   opacity: 1;
@@ -1611,15 +1611,15 @@ Change-Id: I683d029d09340a460b02016c5c4fbd6ada5a9b35
   min-height: 48px;
   padding-left: 48px;
   line-height: 48px;
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/49b444433c34e2e7252e463e40d63a1d);
   background-repeat: no-repeat;
   background-position: left top;
 }
 .togglingEnabled .openSection.content_block.loading {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/49b444433c34e2e7252e463e40d63a1d);
 }
 .togglingEnabled .openSection.content_block.ajaxError {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/warning.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/770fb648cd497c7ca039118d24bac639);
 }
 .page-loading .section_anchors,
 .page-loading .content_block,
@@ -1861,10 +1861,10 @@ Change-Id: I683d029d09340a460b02016c5c4fbd6ada5a9b35
   background-size: auto 9px;
 }
 .togglingEnabled .section_heading.openSection button {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/hide.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/377cb47b31e14b67f7f4eb4ce0e13b66);
 }
 .togglingEnabled .section_heading button {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/show.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/2ed07e029043632990497e8dc5ce3172);
 }
 .openSection button {
   opacity: 1;
@@ -1901,15 +1901,15 @@ Change-Id: I683d029d09340a460b02016c5c4fbd6ada5a9b35
   min-height: 48px;
   padding-left: 48px;
   line-height: 48px;
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/49b444433c34e2e7252e463e40d63a1d);
   background-repeat: no-repeat;
   background-position: left top;
 }
 .togglingEnabled .openSection.content_block.loading {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/ajax-loader.gif?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/49b444433c34e2e7252e463e40d63a1d);
 }
 .togglingEnabled .openSection.content_block.ajaxError {
-  background-image: url(//bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/modules/images/warning.png?2012-10-30T23:26:40Z);
+  background-image: url(/static/cssimages/770fb648cd497c7ca039118d24bac639);
 }
 .page-loading .section_anchors,
 .page-loading .content_block,

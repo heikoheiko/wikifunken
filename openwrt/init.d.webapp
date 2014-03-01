@@ -4,14 +4,12 @@ START=99
 STOP=10
  
 start() {        
-        echo start
-        # commands to launch application
-	/root/www/webappd
+	/bin/mount /root/en.wp.50k.articles.sqfs /root/mnt/articles/ -t squashfs
+	/bin/mount /root/en.wp.50k.images.sqfs /root/mnt/images/ -t squashfs
+	/bin/mount /root/en.wp.50k.index.sqfs /root/mnt/index/ -t squashfs
+	/root/www/webappd start
 }                 
  
 stop() {          
-        echo stop
-        # commands to kill application 
-	kill `cat /var/run/webappd.pid`
-	rm /var/run/webappd.pid
+	/root/www/webappd stop	
 }	

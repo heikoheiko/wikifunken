@@ -17,6 +17,7 @@ def main():
         fn = os.path.join(images_dir, layout.ext_img_url2fn(url))
         if not os.path.exists(fn):
             bot.add(url, fn)
+
     #print bot.jobs
     bot.run()
 
