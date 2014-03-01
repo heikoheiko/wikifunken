@@ -58,7 +58,7 @@ def main():
     d = urllib2.urlopen('http://toolserver.org/~enwp10/bin/pindex.fcgi?sec=[All]').read()
     projects = re.findall(re.escape('http://toolserver.org/~enwp10/bin/list2.fcgi?projecta=') + '(.*?)"', d)
 
-    seek = 'Bihar'
+    seek = ''
     for i, name in enumerate(projects):
         if seek and name != seek:
             continue
