@@ -21,6 +21,9 @@ Note: I hacked this since the Kiwix http server used to much resources to run on
 Documentation
 -------------
 
+# Wikipeda Version 1.0 Project  http://en.wikipedia.org/wiki/Wikipedia:Version_1.0_Editorial_Team
+# is not on toolserver anumore FIXME
+
 # Select NUM=1000 articles to download and select
 ~/dev/wikifunken/ ./articleselector.py scored_articles.15.11.12.txt 1000 > data/articles.txt
 selected 1000 of 1139809 articles with minimum rank 1846
