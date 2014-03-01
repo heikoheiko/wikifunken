@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+__author__ = 'heikoheiko'
+import logging
+from pydaemon import Daemon
+import webapp
+
+class WebDaemon(Daemon):
+    def run(self):
+        webapp.main(debug=False)
+        logging.debug("Start WebDaemon")
+
+if __name__ == "__main__":
+    logging.basicConfig(filename="webdaemon.log",level=logging.DEBUG)
+    daemon = WebDaemon("/var/run/webappd.pid")
+    try:
+        daemon.start()
+    except AttributeError:
+        daemon.main()

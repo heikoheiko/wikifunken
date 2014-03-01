@@ -43,11 +43,16 @@ def search():
             return flask.redirect('wiki/' + hit['title'])
     return flask.render_template('search.html', query = query_string, results = hits)
 
-
-if __name__ == '__main__':
-    if len(sys.argv): # debug
+def main(debug):
+    if debug: # debug
+        print 'starting in debug mode'
         app.run(debug=True, host='0.0.0.0')
     else:
-        from gevent.wsgi import WSGIServer
-        http_server = WSGIServer(('', 5000), app)
-        http_server.serve_forever()
+        app.run(debug=False, host='0.0.0.0')
+#        from gevent.wsgi import WSGIServer
+#        print 'starting in gevent mode'
+#        http_server = WSGIServer(('', 5000), app)
+#        http_server.serve_forever()
+
+if __name__ == '__main__':
+    main(debug = bool(len(sys.argv) == 2))
